@@ -110,7 +110,7 @@ a:hover{
 
 /*This is the 'under construction' overlay that is under the nav bar*/
 .overlay {
-	position: relative;
+	position: absolute;
 	top: 0;
 	left: 0;
 	z-index: 1;
