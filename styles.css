@@ -151,3 +151,6 @@ a:hover{
 a.hidden{
 	color:white;
 }
+table.top{
+	z-index:100;
+}
