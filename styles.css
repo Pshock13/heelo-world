@@ -28,7 +28,7 @@ a:hover{
 
 #container { /*contains all the content center on the page*/
 	background-color: rgba(0, 0, 0, .5);
-	width: 100%;
+	width: 1000px;
 	height:100%;
 	margin-top: 0;
 	margin-bottom: 0;
