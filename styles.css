@@ -151,7 +151,7 @@ a:hover{
 a.hidden{
 	color:white;
 }
-.top{
+.top > *{
 	position: relative;
 	z-index:100;
 }
