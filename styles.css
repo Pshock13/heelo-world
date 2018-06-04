@@ -13,7 +13,10 @@ body {
 a img{ /*This selector removes the blue border around image links that some browsers display. */
 border: none;
 }
-
+a{
+	position: relative;
+	z-index:100;
+}
 a:link, a:visited{
 	text-decoration: none;
 	color: #00ccff; /*Turquoise*/
