@@ -1,23 +1,31 @@
 * {
 	box-sizing: border-box;
 }
+
 body {
 	margin: 0;
 	padding: 0;
-	height: 100%;
+    height: 40rem;
 	background-attachment: fixed;
 	/* border tag only used to see edges of page, comment out when not in use*/
 	/*border: 1px solid red;*/
+    
 }
-a img{ /*This selector removes the blue border around image links that some browsers display. */
-border: none;
+
+a img { /*This selector removes the blue border around image links that some browsers display. */
+    border: none;
+    
 }
+
 a:link, a:visited{
 	text-decoration: none;
 	color: #00ccff; /*Turquoise*/
+    
 }
+
 a:hover{
-	color: #0000ff; /*Dark Blue*/
+	color: #0000ff;/*Dark Blue*/
+    text-decoration: underline;
 }
 
 /*IDs*/
@@ -25,38 +33,32 @@ a:hover{
 #container { /*contains all the content center on the page*/
 	background-color: rgba(0, 0, 0, .5);
 	width: 1150px;
-	height:100%;
 	margin-top: 0;
 	margin-bottom: 0;
+    height: 100%;
 	margin-left: auto; /*keeps the container off the left side*/
 	margin-right: auto; /*keeps the container off the right side*/
 	/*border: 1px solid green;*/ /*Uncomment to show borders of container*/
-	position: relative;
-	clear:both;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
 	
 }
 
 #header {
-	background-color: ;
-	position: ;
-	padding-top: px;
-	padding-bottom: px;
-	padding-left: px;
-	padding-right: px;
-	margin-left: px;
 	width: 250px;
 	margin-top: 10; /*keeps the header 10px away from the top*/
 	/*border: 1px solid blue;*/
 	/*box-shadow: 1px 3px 1px 1px  rgba(255, 0, 0, 0.5);*/
+    
 }
 
 
 #nav {
 	background-color: rgba(255, 255, 255, .25);
-	float: ;
 	/*width: 250px;*/
-	height: 90%;
-	position: fixed;
+	height: 100%;
 	margin-top: 20px;
 	margin-left: 20px;
 	margin-bottom: 2.5%;
@@ -68,22 +70,36 @@ a:hover{
 	word-wrap: break-word;      /* IE */
 	box-shadow: 15px 15px 0px 0px  rgba(0, 204, 255, 0.5);
 	text-shadow:1px 1px 0 rgba(0,0,0,1.0);
+    
+}
+
+div#content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 #content {
 	/*background-color: rgba(0, 0, 0, .5);*/
 	/*border: 1px solid red;*/
-	float: right;
-	width: 800px;
-	padding: ;
-	position: ;
-	height: 90%;
+	width: 70%;
+    height: 100%;
 	margin-top: 20px;
-	margin-bottom: 2.5%;
-	margin-right:20px;
-	margin-left: ;
 	box-shadow: 1px 1px 1px 1px  rgba(255, 0, 0, 0.5);
 	box-shadow: 15px 15px 0px 0px  rgba(0, 204, 255, 0.5);
+    
+}
+
+#content iframe {
+    width: 100%;
+    height: 100%;
+
+}
+
+#content center {
+    width: 100%;
+    height: 100%;
 }
 
 #footer {
@@ -91,29 +107,32 @@ a:hover{
 	color:white;
 	text-align: center;
 	width: 100%;
-	position: fixed;
-	clear:both;
 	bottom: 0;
 	left: 0;
 	text-shadow:1px 1px 0 rgba(0,0,0,1.0);
 	/*border: 1px solid blue;*/
+    
 }
 
 /*CLASSES*/
 
 /*This is the 'under construction' overlay that is under the nav bar*/
+
 .overlay {
 	position: absolute;
 	top: 0;
 	left: 0;
 	z-index: -1;
+    
 }
 
 /*This is the 'sale' banner*/
+
 .sale{
 	position:absolute;
 	top: 0;
 	left: 0;
+    
 }
 
 .home {
@@ -121,30 +140,36 @@ a:hover{
 	color: black;
 	vertical-align: middle;
 	font-size: 24;
+    
 }
 
 .videos{
 	background-color: rgba(255, 255, 255, .25);
 	color: black;
 	text-align: center;
+    
 }
 
 .signup{
 	background-color: rgba(255, 255, 255, .25);
 	color: black;
 	margin: 10px;
+    
 }
 
 .contact{
 	background-color: rgba(255, 255, 255, .25);
 	color: black;
+    
 }
 
 .poll{
 	color:#00ccff;
 	text-shadow:1px 1px 0 rgba(0,0,0,1.0);
+    
 }
 
 a.hidden{
 	color:white;
+    
 }
