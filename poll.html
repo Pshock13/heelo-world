@@ -1,36 +1,41 @@
-<HTML>
-<HEAD><LINK rel="stylesheet" HREF="styles.css" type="text/css" />
-
-</HEAD>
-<BODY class="poll">
-
-<BR>
-<!--centers the table on the page--><center>
-<TABLE border ="0" cellpadding="5">
-	<TR>
-	<!--table heading cell automatically centered-->
-		<TH><B>Poll of the Week</B>
-		<HR noshade color="#00ccff" width="170px">
-		</TH>
-	</TR>
-<!--Question, All answers, and submit button are inside one data cell-->
-	<TR>
-		<TD>
-		<!--Title-->
-		<FORM METHOD="post" ACTION=""><B>Do you like web polls?</B><P>
-		<div align="left">
-			<!--answer options-->
-			<INPUT TYPE="radio" NAME="answer" value="1" />Yes I do<BR>
-			<INPUT TYPE="radio" NAME="answer" value="2" />No, I do not<BR>
-			<INPUT TYPE="radio" NAME="answer" value="3" />I dont know<BR>
-			<INPUT TYPE="radio" NAME="answer" value="4" />Depends on the question<P>
-		</div>
-		<!--submit button-->
-		<div align="center">
-		<INPUT TYPE="submit" name="submit" value="Submit">
-		</div>
-		</FORM>
-		</TD>
-	</TR>
-</TABLE>
-</body></html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" HREF="styles.css" type="text/css" />
+    </head>
+    <body class="poll">
+        <br>
+        <!--centers the table on the page-->
+        <center>
+            <table border ="0" cellpadding="5">
+                <tr>
+                    <!--table heading cell automatically centered-->
+                    <th>
+                        <b>Poll of the Week</b>
+                        <hr noshade color="#00ccff" width="170px">
+                    </th>
+                </tr>
+                <!--Question, All answers, and submit button are inside one data cell-->
+                <tr>
+                    <td>
+                        <!--Title-->
+                        <form method="post" action="">
+                            <p><b>Do you like web polls?</b></p>
+                            <div align="left">
+                                <!--answer options-->
+                                <input type="radio" name="answer" value="1" />Yes I do<br>
+                                <input type="radio" name="answer" value="2" />No, I do not<br>
+                                <input type="radio" name="answer" value="3" />I dont know<br>
+                                <input type="radio" name="answer" value="4" />Depends on the question<p>
+                            </div>
+                            <!--submit button-->
+                            <div align="center">
+                                <input type="submit" name="submit" value="submit">
+                            </div>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </body>
+</html>
