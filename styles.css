@@ -103,12 +103,12 @@ div#content {
 }
 
 #footer {
-	/*background-color: rgba(0, 0, 0, 1.0);*/
+	background-color: rgba(0, 0, 0, .5);
 	color:white;
 	text-align: center;
-	width: 100%;
-	bottom: 0;
-	left: 0;
+	margin-left: auto; /*keeps the container off the left side*/
+	margin-right: auto; /*keeps the container off the right side*/
+	width: 1150px;
 	text-shadow:1px 1px 0 rgba(0,0,0,1.0);
 	/*border: 1px solid blue;*/
     
