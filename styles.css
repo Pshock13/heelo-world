@@ -19,13 +19,13 @@ a img { /*This selector removes the blue border around image links that some bro
 
 a:link, a:visited{
 	text-decoration: none;
-	color: #00ccff; /*Turquoise*/
+	color: hsla(192, 100%, 50%, 1.0); /*turqoise*/
     
 }
 
 a:hover{
-	color: #0000ff;/*Dark Blue*/
-    text-decoration: underline;
+	color: hsla(192, 100%, 50%, .5); /*transparent turqoise*/
+	text-decoration:null;
 }
 
 /*IDs*/
@@ -36,8 +36,7 @@ a:hover{
 	margin-top: 0;
 	margin-bottom: 0;
 	height: 100%;
-	margin-left: auto; /*keeps the container off the left side*/
-	margin-right: auto; /*keeps the container off the right side*/
+	margin: 0 auto 0 auto; /*keeps the container off the left and right side*/
 	/*border: 1px solid green;*/ /*Uncomment to show borders of container*/
     display: flex;
     flex-wrap: wrap;
@@ -48,7 +47,7 @@ a:hover{
 
 #header {
 	width: 250px;
-	margin-top: 10; /*keeps the header 10px away from the top*/
+	margin: 5px auto 0 auto;
 	/*border: 1px solid blue;*/
 	/*box-shadow: 1px 3px 1px 1px  rgba(255, 0, 0, 0.5);*/
     
@@ -57,6 +56,7 @@ a:hover{
 
 #nav {
 	background-color: rgba(255, 255, 255, .25);
+	color:hsla(192, 100%, 50%, 1.0);
 	/*width: 250px;*/
 	height: 100%;
 	margin-top: 20px;
@@ -112,7 +112,9 @@ div#content {
 	bottom: 0;
 	/*border: 1px solid blue;*/
 }
-
+#center{
+	text-align: center;
+}
 /*CLASSES*/
 
 /*This is the 'under construction'& 'sale' underlay that is under the nav bar*/
@@ -126,7 +128,8 @@ div#content {
 }
 
 table.nav td{
-	padding:0 5px;
+	margin:20px 15px;
+	padding:0px 5px;
 }
 
 .home {
@@ -160,7 +163,8 @@ table.nav td{
 .poll{
 	color:#00ccff;
 	text-shadow:1px 1px 0 rgba(0,0,0,1.0);
-    
+	text-align: center;
+    margin-top:10px;
 }
 
 a.hidden{

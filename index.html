@@ -12,22 +12,14 @@
     <body background="media/bg.jpg" bgcolor="black">
             <!--sale banner location-->
             <!--<a href="sale.html" target="target"><img class="underlay" src="media/sale_banner.png"></a>-->
-
         <img class="underlay" src="media/UNDER_CONSTRUCTION.png">
         <div id="container">
             <div id="nav">
-                <!--header & logo-->
                 <div id="header">
-                <!--Logo will be scaled to 250x100px-->
-                    <center>
-                        <a href="index.html"><img src="media/logo.png" title="Guitar lessons logo" width="250px" height="100px"></a>
-                    </center>
+                    <a href="index.html"><img src="media/logo.png" title="Guitar lessons logo" width="250px" height="100px"/></a>
                 </div>
-                <!--/header & logo-->
-                <!--nav options-->
-                <center>
                     <hr noshade color="white">
-                        <table border="0" cellpadding="3">
+                        <table class="nav" border="0" width="250px">
                             <tr>
                                 <td>
                                     <a href="home.html" target="target">Home</a>
@@ -43,16 +35,38 @@
                                 </td>
                             </tr>
                         </table>
-                        <hr noshade color="white">
-                </center>
-                <!--/nav options-->
-                <!--start poll frame-->
-                <center>
-                    <iframe src="poll.html" height="300" width="200" frameborder="0" name="poll" scrolling="no">
-
-                    </iframe>
-                </center>
-                <!--end poll frame-->
+                        <hr noshade color="white">                  
+                <div class="center">
+                    <table border ="0" cellpadding="5" align="center">
+                    <tr>
+                        <!--table heading cell automatically centered-->
+                        <th>
+                            <b>Poll of the Week</b>
+                            <hr noshade color="#00ccff" width="170px">
+                        </th>
+                    </tr>
+                    <!--Question, All answers, and submit button are inside one data cell-->
+                    <tr>
+                        <td>
+                            <!--Title-->
+                            <form method="post" action="">
+                                <p><b>Do you like web polls?</b></p>
+                                <div align="left">
+                                    <!--answer options-->
+                                    <input type="radio" name="answer" value="1" />Yes I do<br>
+                                    <input type="radio" name="answer" value="2" />No, I do not<br>
+                                    <input type="radio" name="answer" value="3" />I dont know<br>
+                                    <input type="radio" name="answer" value="4" />Depends on the question<p>
+                                </div>
+                                <!--submit button-->
+                                <div align="center">
+                                    <input type="submit" name="submit" value="Submit">
+                                </div>
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+                </div>
                 <hr noshade color="white">
                 <center>
                     <b>Comments</b>
@@ -64,16 +78,13 @@
                     <input name="username" placeholder="Username" type="text" />
                     <input type="submit" value="Submit" />
                 </center>
-            </div><!--nav-->
+            </div>
             <div id="content">
-                <!--<img class="overlay" src="media/under_construction.png">-->
                 <iframe frameborder="0" name="target" scrolling="yes" src="home.html">
 
                 </iframe>
             </div>
-            <!--/content-->
         </div>
-        <!--/container-->
         <div id="footer">
                 Copyright &copy; 2016-18 Pshock<sup><a href="https://www.twitch.tv/pshock13" class="hidden">13</a></sup> &#x95; All rights reserved
             </div>
