@@ -31,11 +31,11 @@ a:hover{
 /*IDs*/
 
 #container { /*contains all the content center on the page*/
-	background-color: rgba(0, 0, 0, .5);
+	/*background-color: rgba(0, 0, 0, .5);*/
 	width: 1150px;
 	margin-top: 0;
 	margin-bottom: 0;
-    height: 100%;
+	height: 100%;
 	margin-left: auto; /*keeps the container off the left side*/
 	margin-right: auto; /*keeps the container off the right side*/
 	/*border: 1px solid green;*/ /*Uncomment to show borders of container*/
@@ -68,7 +68,7 @@ a:hover{
 	white-space: -pre-wrap;     /* Opera <7 */   
 	white-space: -o-pre-wrap;   /* Opera 7 */    
 	word-wrap: break-word;      /* IE */
-	box-shadow: 15px 15px 0px 0px  rgba(0, 204, 255, 0.5);
+	/*box-shadow: 15px 15px 0px 0px  rgba(0, 204, 255, 0.5);*/
 	text-shadow:1px 1px 0 rgba(0,0,0,1.0);
     
 }
@@ -86,8 +86,7 @@ div#content {
 	width: 70%;
     height: 100%;
 	margin-top: 20px;
-	box-shadow: 1px 1px 1px 1px  rgba(255, 0, 0, 0.5);
-	box-shadow: 15px 15px 0px 0px  rgba(0, 204, 255, 0.5);
+	/*box-shadow: 15px 15px 0px 0px  rgba(0, 204, 255, 0.5);*/
     
 }
 
@@ -103,15 +102,15 @@ div#content {
 }
 
 #footer {
-	background-color: rgba(0, 0, 0, .5);
+	/*background-color: rgba(0, 0, 0, .5);*/
 	color:white;
-	text-align: center;
-	margin-left: auto; /*keeps the container off the left side*/
-	margin-right: auto; /*keeps the container off the right side*/
-	width: 1150px;
 	text-shadow:1px 1px 0 rgba(0,0,0,1.0);
+	width: 100%;
+	position: fixed;
+	clear:both;
+	text-align: center;
+	bottom: 0;
 	/*border: 1px solid blue;*/
-    
 }
 
 /*CLASSES*/
