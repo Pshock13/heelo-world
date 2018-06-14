@@ -116,9 +116,9 @@ div#content {
 
 /*CLASSES*/
 
-/*This is the 'under construction' overlay that is under the nav bar*/
+/*This is the 'under construction'& 'sale' underlay that is under the nav bar*/
 
-.overlay {
+.underlay {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -126,13 +126,8 @@ div#content {
     
 }
 
-/*This is the 'sale' banner*/
-
-.sale{
-	position:absolute;
-	top: 0;
-	left: 0;
-    
+table.nav td{
+	padding:0 5px;
 }
 
 .home {
