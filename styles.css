@@ -5,7 +5,6 @@
 body {
 	margin: 0;
 	padding: 0;
-	height: 0rem;
 	min-height: 55rem;
 	background-attachment: fixed;
 	/* border tag only used to see edges of page, comment out when not in use*/
@@ -32,7 +31,7 @@ a:hover{
 /*IDs*/
 
 #container { /*contains all the content center on the page*/
-	/*background-color: rgba(0, 0, 0, .5);*/
+	background-color: rgba(0, 0, 0, .5);
 	width: 1150px;
 	margin-top: 0;
 	margin-bottom: 0;
