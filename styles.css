@@ -116,10 +116,10 @@ div#content {
 }
 /*CLASSES*/
 
-/*This is the 'under construction'& 'sale' underlay that is under the nav bar*/
+/*This is the 'under construction' & 'sale' underlay that is under the nav bar*/
 
 .underlay {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: -1;
