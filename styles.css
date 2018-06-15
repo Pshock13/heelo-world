@@ -68,9 +68,9 @@ a:hover{
 	white-space: -pre-wrap;     /* Opera <7 */   
 	white-space: -o-pre-wrap;   /* Opera 7 */    
 	word-wrap: break-word;      /* IE */
-	/*box-shadow: 15px 15px 0px 0px  rgba(0, 204, 255, 0.5);*/
+	box-shadow: 15px 15px 0px 0px  rgba(0, 204, 255, 0.5);
 	text-shadow:1px 1px 0 rgba(0,0,0,1.0);
-    
+	text-align:center;
 }
 
 div#content {
@@ -85,14 +85,12 @@ div#content {
 	/*border: 1px solid red;*/
 	width: 70%;
 	margin-top: 20px;
-	/*box-shadow: 15px 15px 0px 0px  rgba(0, 204, 255, 0.5);*/
-    
+	box-shadow: 15px 15px 0px 0px  rgba(0, 204, 255, 0.5);
 }
 
 #content iframe {
     width: 100%;
     height: 100%;
-
 }
 
 #content center {
@@ -111,12 +109,14 @@ div#content {
 	bottom: 0;
 	/*border: 1px solid blue;*/
 }
+
 #center{
 	text-align: center;
+	border:1px, solid red;
 }
 /*CLASSES*/
 
-/*This is the 'under construction' & 'sale' underlay that is under the nav bar*/
+/*This is the 'under construction'& 'sale' underlay that is under the nav bar*/
 
 .underlay {
 	position: fixed;
