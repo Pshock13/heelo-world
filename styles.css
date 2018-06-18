@@ -36,7 +36,7 @@ align-items: center;
 }
 
 #container {
-	background-color: rgba(0, 255, 0, .5);
+	background-color: rgba(0, 0, 0, .5);
 	width: 1150px;
 	height: 99vh;
 	margin: 0 auto 0 auto; /*keeps the container off the left and right side*/
