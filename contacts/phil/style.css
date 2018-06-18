@@ -34,13 +34,14 @@ div#container {
 }
 
 div#overlay{
-	background: url("../../media/1.jpg") no-repeat center center;
+	background: url("../../media/2.jpg") no-repeat center center;
 	position:absolute;
 	width:1200px;
 	height:600px;
 	z-index:10;
 	margin:auto;
-	pointer-events: none;
+	pointer-events:none;
+	opacity:.75;
 }
 
 .mugshot {
