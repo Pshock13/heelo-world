@@ -26,7 +26,6 @@ a:hover{
 	text-decoration:null;
 }
 
-/*IDs*/
 #index{
 	width:100%;
 	height:100%;
@@ -37,15 +36,14 @@ align-items: center;
 }
 
 #container {
-	background-color: rgba(0, 0, 0, .5);
+	background-color: rgba(0, 255, 0, .5);
 	width: 1150px;
 	height: 99vh;
 	margin: 0 auto 0 auto; /*keeps the container off the left and right side*/
-	/*border: 1px solid green;*/ /*Uncomment to show borders of container*/    	display: flex;
+	/*border: 1px solid green;*/ /*Uncomment to show borders of container*/    		display: flex;
    	flex-wrap: wrap;
     	justify-content: space-between;
     	align-items: flex-start;
-	
 }
 
 #header {
@@ -53,7 +51,6 @@ align-items: center;
 	margin: 5px auto 0 auto;
 	/*border: 1px solid blue;*/
 	/*box-shadow: 1px 3px 1px 1px  rgba(255, 0, 0, 0.5);*/
-    
 }
 
 
@@ -106,15 +103,12 @@ align-items: center;
 	text-align: center;
 	border:1px, solid red;
 }
-/*CLASSES*/
-
-/*This is the 'under construction'& 'sale' underlay that is under the nav bar*/
 
 .overlay {
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 1;
+	z-index: 1000;
     	pointer-events: none;
 	opacity: .8;
 }
@@ -127,16 +121,23 @@ table.nav td{
 .home {
 	background-color: rgba(255, 255, 255, .25);
 	color: black;
+	height:100vh;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
 	vertical-align: middle;
 	font-size: 24;
-    
+	margin:0 auto 0 auto;    
 }
 
 .videos{
 	background-color: rgba(255, 255, 255, .25);
 	color: black;
 	text-align: center;
-    
+	height:100vh;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
 }
 
 .signup{
