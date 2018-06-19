@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
         <link rel="shortcut icon" href="media/icon.gif">
-        <link rel="stylesheet" href="" type="text/css" />
+        <link href="style.css" type="text/css" rel="stylesheet" />
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
         <!-- jQuery library -->
@@ -19,15 +19,17 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     </head>
     <!--    BOOTSTRAP 4 LAYOUT    -->
-    <body>
-        <div class="container-fluid">
-            <a href="../../index.html"><i class="fas fa-arrow-left"></i> Home</a>
-            &#124;
-            <a href="../phil/phil.html">Phil <i class="fas fa-arrow-right"></i></a>
+    <body class="bg-code">
+        <div class="container-fluid text-white">
+            <div class="container fixed-top m-2 p-1">
+                <a href="../../index.html"><i class="fas fa-arrow-left"></i> Home</a>
+                &#124;
+                <a href="../phil/phil.html">Phil <i class="fas fa-arrow-right"></i></a>
+            </div>
             <!--Contact Card-->
-            <div class="jumbotron jumbotron-fluid container">
+            <div class="jumbotron jumbotron-fluid container transparent-bg rounded">
                 <div class="container">
-                    <h1 class="bg-info">
+                    <h1 class="bg-info font-weight-light">
                         &lt;Web Developer/&gt;
                     </h1>
                 </div>
@@ -38,18 +40,18 @@
                     <strong>Hello World! I have beginner level skills, I live to challenge myself &amp; learn code!</strong> 
                 </div>
             </div>
-            <div class="container">
+            <div class="container bg-white transparent-bg rounded">
                 <div class="row">
                     <div class="col-xl-4">
-                        <div class="container-fluid bg-info">
-                            <h1><span class="badge badge-dark" id="github-count">Hhavok <span class="fa fa-user"></span></span></h1>
-                            <span class="badge badge-dark" id="github-count">Github Count <span class="badge badge-light badge-pill">4</span></span>
-                            <img src="./Media/hhavok.jpg" class="rounded img-fluid card"/>
-                            <blockquote class="blockquote bg-light card-body">
+                        <div class="container-fluid bg-light">
+                            <h1><span class="badge badge-dark mt-2 p-1" id="github-count">Hhavok <span class="fa fa-user"></span></span></h1>
+                            <span class="badge badge-dark mv-2 p-1" id="github-count">Github Count <span class="badge badge-light badge-pill">4</span></span>
+                            <img src="./Media/hhavok.jpg" class="rounded-top img-fluid mt-3"/>
+                            <blockquote class="blockquote bg-white card-body rounded-bottom shadow">
                                 <p class="lead text-info">You aren't defined by what you know, but by what you're capable of figuring out</p>
                                 <footer class="blockquote-footer">Rephased Quote by a programmer</footer>
                             </blockquote>
-                            <blockquote class="blockquote bg-light card">
+                            <blockquote class="blockquote bg-white card-body shadow">
                                 <p class="lead text-info">My great concern is not whether you have failed, but whether you are content with your failure</p>
                                 <footer class="blockquote-footer">Quote by Abraham Lincoln</footer>
                             </blockquote>
@@ -57,30 +59,46 @@
                     </div>
                     <div class="col-xl-4">
                         <div class="container-fluid">
-                            <h3><span class="badge badge-dark" id="github-count">Languages <span class="badge badge-light badge-pill">4</span></span></h3>
+                            <h3><span class="badge badge-dark mt-2 p-1" id="github-count">Languages <span class="badge badge-light badge-pill">4</span></span></h3>
                             <img src="" class="img-fluid"/>
-                            <ul class="list-group">
+                            <ul class="list-group shadow d-flex-row">
+                                <li class="list-group-item d-flex">
+                                    <h6 class="font-weight-light rounded-left bg-dark p-1 html5 text-right">HTML</h6>
+                                    <i class="fab fa-html5 bg-danger p-1 rounded-right html5 text-center"></i>
+                                </li>
                                 <li class="list-group-item">
-                                    <div class="progress">
-                                        <div class="progress-bar progress-bar-striped bg-success" style="width:70%">HTML 70%
+                                    <div class="progress bg-dark">
+                                        <div class="progress-bar progress-bar-striped bg-success" style="width:70%">70%
                                         </div>
                                     </div>
                                 </li>
+                                <li class="list-group-item d-flex">
+                                    <h6 class="font-weight-light rounded-left bg-dark p-1 html5 text-right">CSS</h6>
+                                    <i class="fab fa-css3 bg-info p-1 rounded-right html5 text-center"></i>
+                                </li>
                                 <li class="list-group-item">
-                                    <div class="progress">
-                                        <div class="progress-bar progress-bar-striped bg-success" style="width:60%">CSS 60%
+                                    <div class="progress mt-2 bg-dark">
+                                        <div class="progress-bar progress-bar-striped bg-success" style="width:60%">60%
                                         </div>
                                     </div>
                                 </li>
+                                <li class="list-group-item d-flex">
+                                    <h6 class="font-weight-light rounded-left bg-dark p-1 html5 text-right">JavaScript</h6>
+                                    <i class="fab fa-node-js bg-warning p-1 rounded-right html5 text-center"></i>
+                                </li>
                                 <li class="list-group-item">
-                                    <div class="progress">
-                                        <div class="progress-bar progress-bar-striped bg-success" style="width:50%">JavaScript 50%
+                                    <div class="progress mt-2 bg-dark">
+                                        <div class="progress-bar progress-bar-striped bg-success" style="width:50%">50%
                                         </div>
                                     </div>
                                 </li>
+                                <li class="list-group-item d-flex">
+                                    <h6 class="font-weight-light rounded-left bg-dark p-1 html5 text-right">SCSS/SASS</h6>
+                                    <i class="fab fa-sass bg-pink p-1 rounded-right html5 text-center"></i>
+                                </li>
                                 <li class="list-group-item">
-                                    <div class="progress">
-                                        <div class="progress-bar progress-bar-striped bg-success" style="width:40%">SASS/SCSS 40%
+                                    <div class="progress mt-2 bg-dark">
+                                        <div class="progress-bar progress-bar-striped bg-success" style="width:40%">40%
                                         </div>
                                     </div>
                                 </li>
@@ -88,10 +106,10 @@
                         </div>
                     </div>
                     <div class="col-xl-4">
-                        <div class="container-fluid">
-                            <h3><span class="badge badge-dark" id="github-count">Projects <span class="fas fa-archive"></span></span></h3>
+                        <div class="container-fluid bg-light">
+                            <h3><span class="badge badge-dark mt-2 p-1" id="github-count">Projects <span class="fas fa-archive"></span></span></h3>
                             <img src="" class="img-fluid"/>
-                            <ul class="nav nav-tabs">
+                            <ul class="nav nav-tabs ">
                                 <li class="nav-item">
                                     <a class="nav-link active" data-toggle="tab" href="#home">Home</a>
                                 </li>
@@ -102,12 +120,18 @@
                                     <a class="nav-link" data-toggle="tab" href="#menu2">Menu 2</a>
                                 </li>
                             </ul>
-                            <div class="tab-content">
+                            <div class="tab-content shadow">
                                 <div class="tab-pane container active" id="home">
                                     <ul>
                                         <li><a href="https://bigmikesexp.github.io" target="project">Big Mikes</a></li>
+                                        <li><a href="#" target="project">30 Days 30 Sites</a></li>
+                                        <li><a href="#" target="project"></a></li>
+                                        <li><a href="#" target="project"></a></li>
+                                        <li><a href="#" target="project"></a></li>
                                     </ul>
-                                    <iframe name="projects"></iframe>
+                                    <div class="embed-responsive embed-responsive-1by1">
+                                        <iframe name="project" class="mt-1 pl-0 embed-responsive-item"></iframe>
+                                    </div>
                                 </div>
                                 <div class="tab-pane container fade" id="menu1">...</div>
                                 <div class="tab-pane container fade" id="menu2">...</div>
