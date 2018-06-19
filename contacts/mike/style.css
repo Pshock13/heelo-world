@@ -1,22 +1,37 @@
-* {
-	box-sizing: border-box;
+.bg-code {
+    
+    background-image: url(Media/bg-code.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    
 }
 
-div#frame{
-    width:100%;
-    height:100%;
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
-    align-items: center;
+.transparent-bg {
+    
+    opacity: .85;
+    
 }
 
+.img-small {
+    
+    min-width: 30px;
+    max-height: 30px;
+    
+}
 
-.overlay {
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 1000;
-    	pointer-events: none;
-	opacity: .8;
+.html5 {
+    
+    height: 1.5rem;
+    
+}
+
+h6.html5 {
+    width: 5rem;
+}
+
+.bg-pink {
+    
+    background-color: hsla(336, 88%, 31%, 1);
+    
 }
