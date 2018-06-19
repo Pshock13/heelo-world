@@ -41,7 +41,7 @@ div#container {
     align-items: center;
 }	
 
-div#overlay{
+/*div#overlay{
 	background: url("../../media/2.jpg") no-repeat center center;
 	position:absolute;
 	width:1200px;
@@ -51,16 +51,16 @@ div#overlay{
 	pointer-events:none;
 	opacity:.75;
 	border-radius:20px;
-}
+}*/
 
-/*.overlay {
+.overlay {
 	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: 1000;
     	pointer-events: none;
 	opacity: .8;
-}*/
+}
 
 .mugshot {
     height:200px;
