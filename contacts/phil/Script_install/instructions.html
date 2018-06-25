@@ -1,0 +1,153 @@
+<div id="articleContent">
+			<table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#What.27s_Greasemonkey.3F"><span class="tocnumber">1</span> <span class="toctext">What's Greasemonkey?</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#What_do_the_scripts_do.3F"><span class="tocnumber">2</span> <span class="toctext">What do the scripts do?</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#How_do_I_get_them.3F"><span class="tocnumber">3</span> <span class="toctext">How do I get them?</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#What_if_I_run_into_problems.3F"><span class="tocnumber">4</span> <span class="toctext">What if I run into problems?</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Disable_Greasemonkey_or_individual_scripts"><span class="tocnumber">4.1</span> <span class="toctext">Disable Greasemonkey or individual scripts</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Check_for_Updates"><span class="tocnumber">4.2</span> <span class="toctext">Check for Updates</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></tbody></table><script>if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<h3><span class="editsection">[<a href="/index.php?title=User:Jffrenc/OBPS_Scripts&amp;action=edit&amp;section=1" title="Edit section: What's Greasemonkey?">edit</a>]</span><span class="togglesection">[<a class="toggleclass" href="#">hide</a>]</span> <span class="mw-headline" id="What.27s_Greasemonkey.3F"> What's Greasemonkey? </span></h3><div class="collapsible">
+<p>Greasemonkey "allows you to customize the way a web page displays or behaves, by using small bits of JavaScript." It is a Firefox extension that enables people to change web pages that they don't control.
+</p><p>Like anything else you load on your system, Greasemonkey can be used against you. Don't load scripts onto your system unless you trust the source.
+</p>
+<table style="width:80%; margin: 0 auto 1em auto; padding: 1em; background: #fff0f0; border-left: 7pt solid #ffB0B0; border-top: 1px solid #c0c0c0; border-right: 1px solid #c0c0c0; border-bottom: 1px solid #c0c0c0;"><tbody><tr><td style="padding-right:10px;vertical-align:middle;" width="32"><img src="https://internal-cdn.amazon.com/w.amazon.com/skins/Amazon/images/Stop_hand.png" alt="Stop_hand.png"></td><td style="vertical-align:middle"><b>WARNING</b>: 
+<ul><li> Greasemonkey and Greasemonkey scripts are <b>not officially supported by Amazon</b>. The Global Helpdesk and the IT Support teams will only provide support on a best-effort basis
+</li><li> Greasemonkey scripts must not be used on sites that handle Restricted or Critical data</li></ul></td></tr></tbody></table>
+
+</div><h3><span class="editsection">[<a href="/index.php?title=User:Jffrenc/OBPS_Scripts&amp;action=edit&amp;section=2" title="Edit section: What do the scripts do?">edit</a>]</span><span class="togglesection">[<a class="toggleclass" href="#">hide</a>]</span> <span class="mw-headline" id="What_do_the_scripts_do.3F"> What do the scripts do? </span></h3><div class="collapsible">
+<table style="width: 100%" cellspacing="1" cellpadding="1" border="1">
+
+<tbody><tr>
+<th scope="col"> Description<br>
+</th><th scope="col">
+<p>Script Name
+</p>
+</th></tr>
+<tr>
+<td>
+<p>Researches items missing in OOPS and tells you what tote they can be found in.
+</p>
+</td><td>
+<p>Check Crisplant for MissingNoSellerInventory demands
+</p>
+</td></tr>
+<tr>
+<td> When printed, circles the quantity of every line with more than one unit.<br>
+</td><td>
+<p>Circle &gt;1 qty in OOPS
+</p>
+</td></tr>
+<tr>
+<td> Adds "CPT" to the top left corner of OOPS when Time To Truck is less than 1h.<br>
+</td><td>
+<p>CPT Shipment Alert in OOPS
+</p>
+</td></tr>
+<tr>
+<td>
+<p>Changes UTC time on Hero to be local time zones; displays am/pm
+</p>
+</td><td> Hero in Local TZ<br>
+</td></tr>
+<tr>
+<td> Like above, but for Hitch pages<br>
+</td><td>
+<p>Hitch Time Zone
+</p>
+</td></tr>
+<tr>
+<td>
+<p>Shows shipment info (things like Box size, packer, station, chute items were marked missing from, etc.) in OOPS.
+</p>
+</td><td>
+<p>HeroData in OOPS
+</p>
+</td></tr>
+<tr>
+<td> Like above, but in Hitch (and only shows box size and packer/station).<br>
+</td><td>
+<p>HeroData in Hitch
+</p>
+</td></tr>
+<tr>
+<td> Changes times at the top of OOPS shipment pages to read "1 hour, 30 minutes" instead of "1.5 hours".<br>
+</td><td>
+<p>Human Readable Hours in OOPs
+</p>
+</td></tr>
+<tr>
+<td> Adds links to OOPS, Rodeo, Hero, and ACW to Hitch shipment pages.<br>
+</td><td>
+<p>OOPs Link in Hitch
+</p>
+</td></tr>
+<tr>
+<td> Changes the OOPS chute selection paged to a tabbed interace.<br>
+</td><td>
+<p>OOPS promptChute Mod
+</p>
+</td></tr>
+<tr>
+<td>
+<p>Adds a shipment ID barcode to printouts of OOPS; useful when sending runners so you can just scan in the page when they come back.
+</p>
+</td><td>
+<p>Shipment ID Barcode
+</p>
+</td></tr>
+<tr>
+<td> Adds actions for each item in an OOPS page: print label, open in FC Research, display ACW data for that asin.<br>
+</td><td>
+<p>Print ASIN from OOPS
+</p>
+</td></tr></tbody></table>
+</div><h3><span class="editsection">[<a href="/index.php?title=User:Jffrenc/OBPS_Scripts&amp;action=edit&amp;section=3" title="Edit section: How do I get them?">edit</a>]</span><span class="togglesection">[<a class="toggleclass" href="#">hide</a>]</span> <span class="mw-headline" id="How_do_I_get_them.3F"> How do I get them? </span></h3><div class="collapsible">
+<p><a href="https://drive-render.corp.amazon.com/view/jffrenc@/gm_scripts/install.html" class="external text" rel="nofollow">This page</a> will guide you through the install of Greasemonkey and the scripts.
+</p><p>You will have to add Greasemonkey to Firefox, then restart the browser. Except for thin clients, your tabs will come back after the restart, so you can do this after you are set up.
+</p><p>Next, you have to click the "Install the scripts" button, and wait for all twelve install dialogs to pop up. Then, install all twelve by pressing the install buttons.
+</p><p>You can then close the install page and start exploring the scripts.
+</p>
+</div><h3><span class="editsection">[<a href="/index.php?title=User:Jffrenc/OBPS_Scripts&amp;action=edit&amp;section=4" title="Edit section: What if I run into problems?">edit</a>]</span><span class="togglesection">[<a class="toggleclass" href="#">hide</a>]</span> <span class="mw-headline" id="What_if_I_run_into_problems.3F"> What if I run into problems? </span></h3><div class="collapsible">
+<p>Again, these scripts are <b>not officially supported by Amazon</b>. The best you can do is check for updates, and if the problem isn't already fixed, reach out to <i>jffrenc@</i>.
+</p>
+</div><h4><span class="editsection">[<a href="/index.php?title=User:Jffrenc/OBPS_Scripts&amp;action=edit&amp;section=5" title="Edit section: Disable Greasemonkey or individual scripts">edit</a>]</span><span class="togglesection">[<a class="toggleclass" href="#">hide</a>]</span> <span class="mw-headline" id="Disable_Greasemonkey_or_individual_scripts"> Disable Greasemonkey or individual scripts </span></h4><div class="collapsible">
+<p>To disable Greasemonkey entirely, you can click the monkey in the top right of your browser. It's in color when enabled, and black and white when disabled.
+</p><p>To disable individual scripts, click the down arrow to the right of the monkey, and uncheck the script you want to disable. This list only includes scripts for the page you are currently viewing. To see all of them, click the down arrow next to the monkey and click Manage User Scripts. You can disable or remove individual scripts using the buttons in each row.
+</p>
+</div><h4><span class="editsection">[<a href="/index.php?title=User:Jffrenc/OBPS_Scripts&amp;action=edit&amp;section=6" title="Edit section: Check for Updates">edit</a>]</span><span class="togglesection">[<a class="toggleclass" href="#">hide</a>]</span> <span class="mw-headline" id="Check_for_Updates"> Check for Updates </span></h4><div class="collapsible">
+<div class="thumb t" style="width:40%; min-width:250px;float:left;clear;"><div class="thumbinner">
+<p><img src="https://w.amazon.com/wiki/legacyattachments/download/User%3AJffrenc/OBPS%20Scripts/WebHome/greasemonkey_menu.png#.png" alt="greasemonkey_menu.png#.png">
+</p>
+</div></div>
+<div class="thumb t" style="width:40%; min-width:350px;float:left;clear;"><div class="thumbinner">
+<p><img src="https://w.amazon.com/wiki/legacyattachments/download/User%3AJffrenc/OBPS%20Scripts/WebHome/greasemonkey_gear.png#.png" alt="greasemonkey_gear.png#.png">
+</p>
+</div></div>
+<p><br>
+</p><p><br>
+</p>
+<table class="navbox" style="font-family: sans-serif; width:100%; vertical-align:middle; font-size:0.9em;;border: #AAA 1px solid;" cellspacing="0"><tbody><tr><td style="padding:2px;"><table class="nowraplinks" style="width:100%;background:transparent;color:inherit;;" cellspacing="0"><tbody><tr><th style=";background:#BDBDFF; font-size:1em; font-weight: bold;" colspan="2" class="navbox-title"><span style="float:left;width:6em;text-align:left;"><span class="noprint plainlinks navbar" style=""><span style="white-space:nowrap;word-spacing:-.12em;"><a href="/index.php/Template:OBPS" title="Template:OBPS"><span style=";background:#BDBDFF; font-size:1em; font-weight: bold;;background:none transparent;border:none;font-size:100%;" title="View this template">v</span></a><span style=";background:#BDBDFF; font-size:1em; font-weight: bold;;background:none transparent;border:none;font-size:100%;"> <b>·</b> </span><a href="/index.php?title=Template_talk:OBPS&amp;action=edit&amp;redlink=1" class="new" title="Template talk:OBPS (page does not exist)"><span style=";background:#BDBDFF; font-size:1em; font-weight: bold;;background:none transparent;border:none;font-size:100%;" title="Discuss this template">d</span></a><span style=";background:#BDBDFF; font-size:1em; font-weight: bold;;background:none transparent;border:none;font-size:100%;"> <b>·</b> </span><a href="https://w.amazon.com:7443/index.php?title=Template:OBPS&amp;action=edit" class="external text" rel="nofollow"><span style=";background:#BDBDFF; font-size:1em; font-weight: bold;;background:none transparent;border:none;font-size:100%;" title="Edit this template">e</span></a></span></span></span><span style="float:right;width:6em;">&nbsp;</span><span class="" style="font-size:110%;"><a href="/index.php/User:Jffrenc/OBPS" title="User:Jffrenc/OBPS">Outbound Problem Solve</a></span></th></tr><tr style="height:2px;"><td></td></tr><tr><td class="navbox-group" style=";background: #DDDDFF; color:black; text-align: right; font-weight: bold; padding: 3px 5px;;">General</td><td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;border-style:none; border: 0px;;;" class="navbox-list navbox-odd"><div style="padding:0em 0.25em">
+<a href="/index.php/User:Jffrenc/OBPS/Links" title="User:Jffrenc/OBPS/Links">Links</a>&nbsp;<span style="font-weight:bold;">·</span> <a href="/index.php?title=User:Jffrenc/OBPS/Intro_to_OOPS&amp;action=edit&amp;redlink=1" class="new" title="User:Jffrenc/OBPS/Intro to OOPS (page does not exist)">Intro to OOPS</a>&nbsp;<span style="font-weight:bold;">·</span> <a href="/index.php?title=User:Jffrenc/OBPS/Checkin_Tutorial&amp;action=edit&amp;redlink=1" class="new" title="User:Jffrenc/OBPS/Checkin Tutorial (page does not exist)">Checkin Tutorial</a>&nbsp;<span style="font-weight:bold;">·</span> <a href="/index.php?title=User:Jffrenc/OBPS/Research_Basics&amp;action=edit&amp;redlink=1" class="new" title="User:Jffrenc/OBPS/Research Basics (page does not exist)">Research Basics</a></div></td></tr><tr style="height:2px"><td></td></tr><tr><td class="navbox-group" style=";background: #DDDDFF; color:black; text-align: right; font-weight: bold; padding: 3px 5px;;">Standards</td><td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;border-style:none; border: 0px;;;" class="navbox-list navbox-even"><div style="padding:0em 0.25em">
+<a href="/index.php?title=User:Jffrenc/OBPS/CPT&amp;action=edit&amp;redlink=1" class="new" title="User:Jffrenc/OBPS/CPT (page does not exist)">CPT</a>&nbsp;<span style="font-weight:bold;">·</span> <a href="/index.php?title=User:Jffrenc/OBPS/Dwells&amp;action=edit&amp;redlink=1" class="new" title="User:Jffrenc/OBPS/Dwells (page does not exist)">Dwells</a>&nbsp;<span style="font-weight:bold;">·</span> <a href="/index.php?title=User:Jffrenc/OBPS/Damages&amp;action=edit&amp;redlink=1" class="new" title="User:Jffrenc/OBPS/Damages (page does not exist)">Damages</a>&nbsp;<span style="font-weight:bold;">·</span> <a href="/index.php?title=User:Jffrenc/OBPS/Standard_Work&amp;action=edit&amp;redlink=1" class="new" title="User:Jffrenc/OBPS/Standard Work (page does not exist)">Standard Work</a>&nbsp;<span style="font-weight:bold;">·</span> <a href="/index.php?title=User:Jffrenc/OBPS/Z-Bin_Usage&amp;action=edit&amp;redlink=1" class="new" title="User:Jffrenc/OBPS/Z-Bin Usage (page does not exist)">Z-Bin Usage</a></div></td></tr><tr style="height:2px"><td></td></tr><tr><td class="navbox-group" style=";background: #DDDDFF; color:black; text-align: right; font-weight: bold; padding: 3px 5px;;">Tools</td><td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;border-style:none; border: 0px;;;" class="navbox-list navbox-odd"><div style="padding:0em 0.25em">
+<a href="/index.php?title=User:Jffrenc/OBPS/OOPS&amp;action=edit&amp;redlink=1" class="new" title="User:Jffrenc/OBPS/OOPS (page does not exist)">OOPS</a>&nbsp;<span style="font-weight:bold;">·</span> <a href="/index.php?title=User:Jffrenc/OBPS/MoveItemsApp&amp;action=edit&amp;redlink=1" class="new" title="User:Jffrenc/OBPS/MoveItemsApp (page does not exist)">MoveItemsApp</a>&nbsp;<span style="font-weight:bold;">·</span> <a href="/index.php?title=User:Jffrenc/OBPS/Printmon&amp;action=edit&amp;redlink=1" class="new" title="User:Jffrenc/OBPS/Printmon (page does not exist)">Printmon</a>&nbsp;<span style="font-weight:bold;">·</span> <a href="/index.php?title=User:Jffrenc/OBPS/FCResearch&amp;action=edit&amp;redlink=1" class="new" title="User:Jffrenc/OBPS/FCResearch (page does not exist)">FCResearch</a>&nbsp;<span style="font-weight:bold;">·</span> <a href="/index.php/User:Jffrenc/OBPS/Putty" title="User:Jffrenc/OBPS/Putty">Putty</a></div></td></tr><tr style="height:2px"><td></td></tr><tr><td class="navbox-group" style=";background: #DDDDFF; color:black; text-align: right; font-weight: bold; padding: 3px 5px;;">Jobs</td><td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;border-style:none; border: 0px;;;" class="navbox-list navbox-even"><div style="padding:0em 0.25em">
+<a href="/index.php?title=User:Jffrenc/OBPS/Amnesty&amp;action=edit&amp;redlink=1" class="new" title="User:Jffrenc/OBPS/Amnesty (page does not exist)">Amnesty</a>&nbsp;<span style="font-weight:bold;">·</span> <a href="/index.php?title=User:Jffrenc/OBPS/Gatekeep&amp;action=edit&amp;redlink=1" class="new" title="User:Jffrenc/OBPS/Gatekeep (page does not exist)">Gatekeep</a>&nbsp;<span style="font-weight:bold;">·</span> <a href="/index.php?title=User:Jffrenc/OBPS/Checkins&amp;action=edit&amp;redlink=1" class="new" title="User:Jffrenc/OBPS/Checkins (page does not exist)">Checkins</a>&nbsp;<span style="font-weight:bold;">·</span> <a href="/index.php?title=User:Jffrenc/OBPS/Jackpot&amp;action=edit&amp;redlink=1" class="new" title="User:Jffrenc/OBPS/Jackpot (page does not exist)">Jackpot</a>&nbsp;<span style="font-weight:bold;">·</span> <a href="/index.php/User:Jffrenc/OBPS/Conditions" title="User:Jffrenc/OBPS/Conditions">Conditions</a></div></td></tr><tr style="height:2px"><td></td></tr><tr><td class="navbox-group" style=";background: #DDDDFF; color:black; text-align: right; font-weight: bold; padding: 3px 5px;;"><a href="/index.php/User:Jffrenc/OBPS/Locations" title="User:Jffrenc/OBPS/Locations">Locations</a></td><td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;border-style:none; border: 0px;;;" class="navbox-list navbox-odd"><div style="padding:0em 0.25em">
+<a href="/index.php/User:Jffrenc/OBPS/tsRNDT00001" title="User:Jffrenc/OBPS/tsRNDT00001">tsRNDT00001</a>&nbsp;<span style="font-weight:bold;">·</span> <a href="/index.php/User:Jffrenc/OBPS/tsProblemSolve" title="User:Jffrenc/OBPS/tsProblemSolve">tsProblemSolve</a></div></td></tr></tbody></table></td></tr></tbody></table><br> <br>
+</div>
+<!-- 
+NewPP limit report
+Preprocessor node count: 586/1000000
+Post-expand include size: 25231/2097152 bytes
+Template argument size: 7806/2097152 bytes
+Expensive parser function count: 0/100
+ExtLoops count: 0/300
+-->
+<div class="printfooter">
+Retrieved from https://w.amazon.com/index.php/User:Jffrenc/OBPS_Scripts</div>
+
+		</div>
