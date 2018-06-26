@@ -32,7 +32,7 @@
 	</tr>
 	<tr>
 		<td>
-			<p>Changes color theme based on time out to truck. &lt;1hr to truck = red, &gt;1hr to truck = orange, and completed non-CPTs = green.</p>
+			<p>Changes color scheme based on time out to truck. &lt;1hr to truck = red, &gt;1hr to truck = orange, and completed non-CPTs = green.</p>
 		</td>
 		<td>
 			<p>OOPS Enhancement Suite</p>
@@ -53,14 +53,32 @@
 	</tr>
 	</tbody>
 	</table>
-</div><h3> <span class="mw-headline" id="What_if_I_run_into_problems.3F"> What if I run into problems? </span></h3><div>
-<p>Again, these scripts are <b>not officially supported by Amazon</b>. The best you can do is check for updates, and if the problem isn't already fixed, reach out to <i>shocklp</i>.
-</p>
-</div><h4> <span class="mw-headline" id="Disable_TamperMonkey_or_individual_scripts"> Disable TamperMonkey or individual scripts </span></h4><div>
-<p>To disable TamperMonkey entirely, you can click the TamperMonkey logo in the top right of your browser and select enable/disable.
-</p><p>To disable individual scripts, click the TamperMonkey logo and uncheck each script you wish to disable.
-</p>
-</div><h4> <span class="mw-headline" id="Check_for_Updates"> Check for Updates </span></h4>
+<table style="width: 100%" cellspacing="1" cellpadding="1" border="1">
+<tbody>
+	<tr>
+		<th scope="col"> Description<br></th>
+		<th scope="col"><p>Script Name</p></th>
+		<th scope="col"><button class="btn btn-primary" type="button" onclick="install_qhud()">Install QHUD</button></th>
+	</tr>
+	<tr>
+		<td>Fits the Audit center table on the page so you don't have to scroll over in order to submit audits.</td>
+		<td>Audit Center Pro</td>
+		<td><a href="https://drive.corp.amazon.com/view/shocklp@/Scripts/.user.js"><button type="button">Install</button></a>
+		</td>
+	</tr>		
+</tbody>
+</table>
+</div>
+	<h3><span class="mw-headline" id="What_if_I_run_into_problems.3F"> What if I run into problems?</span></h3>
+<div>
+<p>Again, these scripts are <b>not officially supported by Amazon</b>. The best you can do is check for updates, and if the problem isn't already fixed, reach out to <i>shocklp</i>.</p>
+</div>
+	<h4><span class="mw-headline" id="Disable_TamperMonkey_or_individual_scripts"> Disable TamperMonkey or individual scripts </span></h4>
+<div>
+<p>To disable TamperMonkey entirely, you can click the TamperMonkey logo in the top right of your browser and select enable/disable.</p>
+<p>To disable individual scripts, click the TamperMonkey logo and uncheck each script you wish to disable.</p>
+</div>
+	<h4><span class="mw-headline" id="Check_for_Updates">Check for Updates</span></h4>
 
 
 
@@ -71,6 +89,9 @@
       "https://drive.corp.amazon.com/view/shocklp@/Scripts/Bypass_Hitch.user.js",
       "https://drive.corp.amazon.com/view/shocklp@/Scripts/OOPS_Enhancement_Suite.user.js",
       ];
+	var qhud = [
+		"",
+		};
     
     function install_tampermonkey(){
       window.open("https://addons.mozilla.org/firefox/downloads/file/988062/tampermonkey-4.7.5788-an+fx.xpi");
@@ -86,6 +107,17 @@
         }
       }, 100);
     }
+	function install_qhud(){
+      for( i=0; i< qhud.length; i++) {
+        win[i] = window.open(scripts[i]);
+      }
+      setTimeout(function(){
+        for( i=0; i< qhud.length; i++) {
+          win[i].close();
+        }
+      }, 100);
+    }
+
   </script>
 
 </body>
