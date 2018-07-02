@@ -9,17 +9,21 @@
 	box-shadow:1px 1px 5px #000;
 }
 
-#toc{
-	
+table.toc{
+	width:100%;
 }
 
 a, a:visited{
 	color:#f00;
 }
 
-div{
-	padding-bottom:50px;
+a:hover{
+	color:#BF4040;
 }
+
+/*div{
+	padding-bottom:50px;
+}*/
 
 .headline{
 	font-size:24;
@@ -27,26 +31,26 @@ div{
 	text-decoration:underline;
 }
 
-table.warning{
+.warning{
 	width:80%;
 	margin:2em auto 2em auto;
 	background-color:#fff0f0;
 	border:1px dashed #FF0F13;
 	border-left:7px solid #ffb0b0;
-	
+	padding:5px;
 }
 
 table.install{
 	width:90%;
 	margin:0 auto 1em auto;
-	border:1px solid black;
+	border:1px outset black;
 	background-color:#fff;
 	box-shadow:1px 1px 5px #000;
 }
 
 table.install th,
 table.install td{
-	border:1px dotted #000;
+	border:2px outset #000;
 	padding:5px;
 }
 
@@ -61,23 +65,24 @@ th.button{
 }
 input{
 	box-shadow:1px 1px 5px #000;
-	border:1px solid red;
+	border:2px outset #000;
 	transition-duration: 0.6s;
-	border-radius:8px;
-}
-
-
-input.disabled:hover, input.disabled{
-	cursor:not-allowed;
-	opacity:0.3;
-	background-color:none;
+	border-radius:0px;
 }
 
 input:hover{
 	color:white;
-	background-color:red;
-	box-shadow:5px 5px 5px #000;
+	background-color:limegreen;
+	border:2px outset green;
 	cursor:pointer;
+	border-radius:10px;
+}
+
+input.disabled:hover, input.disabled{
+	cursor:not-allowed;
+	pointer-events: none;
+	opacity:0.3;
+	background-color:none;
 }
 
 input.install_all{
@@ -115,4 +120,14 @@ img.what{
 
 .what:hover + .whatinfo{
 	display:block;
+}
+
+table.pad td{
+	padding:10px;
+}
+
+.amzn{
+	float:inline-end;
+	height:200px;
+	padding-right:100px;
 }

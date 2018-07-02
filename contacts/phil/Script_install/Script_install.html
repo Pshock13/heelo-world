@@ -1,0 +1,196 @@
+<html>
+<head>
+	<title>Tamper Monkey Script Install Page</title>
+	 <meta name="author" content="Phillip Shockley/shocklp">
+	 <meta name="owner" content="Phillip Shockley/shocklp">
+	<link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+<body>
+<!--https://drive.corp.amazon.com/view/shocklp@/Script_install.html-->
+<div id="articleContent">
+<h1>Amazon Problem Solve Enhancements</h1> 
+<table class="toc">
+	<tbody>
+		<tr>
+			<td>
+				<img class="amzn" src="Media/Amazon.png"/>
+				<div><h2>Contents</h2></div>
+				<ul>
+					<li><a href="#What.27s_TamperMonkey.3F"> <span class="toctext">What's TamperMonkey?</span></a></li>
+					<li><a href="#What_do_the_scripts_do.3F"> <span class="toctext">What do the scripts do?</span></a></li>
+					<li><a href="#What_if_I_run_into_problems.3F"> <span class="toctext">What if I run into problems?</span></a>
+						<ul>
+							<li><a href="#Disable_TamperMonkey_or_individual_scripts"> <span class="toctext">Disable TamperMonkey or individual scripts</span></a></li>
+							<li><a href="#Check_for_Updates"><span class="toctext">Check for Updates</span></a></li>
+						</ul>
+					</li>
+				</ul>
+				
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+	<span class="headline" id="What.27s_TamperMonkey.3F"> What's TamperMonkey? </span>
+<div>
+	<p>TamperMonkey "allows you to customize the way a web page displays or behaves, by using small bits of JavaScript." It is a Firefox extension that enables people to change web pages that they don't control.</p>
+	<p>Like anything else you load on your system, TamperMonkey can be used against you. Don't load scripts onto your system unless you trust the source.</p>
+	<table class="warning">
+		<tbody>
+			<tr>
+				<td><img src="Media/stop_hand.png" alt="Stop_hand.png" width="100px">
+				</td>
+				<td><b>WARNING</b>:
+					<ul>
+						<li>TamperMonkey and TamperMonkey scripts are <b>not officially supported by Amazon</b>. The Global Helpdesk and the IT Support teams will only provide support on a best-effort basis
+						</li>
+						<li>TamperMonkey scripts must not be used on sites that handle Restricted or Critical data
+						</li>
+					</ul>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<hr>
+<span class="headline" id="What_do_the_scripts_do.3F"> What do the scripts do? </span>
+<p>...and how do I get them?</p><div>
+
+<table class="warning">
+		<tbody>
+			<tr>
+				<td><img src="Media/note.png" alt="Exclamation_Sign" width="50px">
+				</td>
+				<td><b>Note</b>:
+					 Before installing any of these scripts, it is highly reccomended that you know how to use all of the problem solve apps unmodded should anything ever happen that stops these scripts from running properly.
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+<p>In the following tables you'll find the scripts that you can install to enhance your experience. First you'll need to <input type="submit" value="Install TamperMonkey" onclick="window.location='https://addons.mozilla.org/firefox/downloads/file/988062/tampermonkey-4.7.5788-an+fx.xpi';" />
+<br>
+After you've installed TamperMonkey, you can pick and choose the scripts you'd like to add, or choose to install all of them at once.</p>
+<!--Start install tables-->
+
+<table class="install">
+	<tbody>
+		<tr>
+			<th colspan="3">Problem Solve Scripts</th>
+		</tr>
+		<tr>
+			<th>Description</th>
+			<th>Script Name</th>
+			<th class="button"><input type="submit" onclick="install_scripts();" value="Install All"></th>
+		</tr>
+		<tr>
+			<td>Changes color scheme based on time out to truck. &lt;1hr to truck = red, &gt;1hr to truck = orange, and completed non-CPTs = green.
+			<img class="what" src="Media/what.png" />
+			<img src="Media/example.png" class="whatinfo" /></td>
+			<td>OOPS Enhancement Suite</td>
+			<th><input type="button" value="Install" onclick="window.location='https://drive.corp.amazon.com/view/shocklp@/Scripts/OOPS_Enhancement_Suite.user.js';"></th>
+		</tr>
+		<tr>
+			<td>From Rodeo, ShipmentIDs will link straight to OOPS and FN SKUs will link straight to FCResearch, comletely bypassing having to go into Hitch first.
+			<img class="what" src="Media/what.png" />
+			<img class="whatinfo" id="hitchpic" src="Media/bypass.png" float="inline-end" /></td>
+			<td>Bypass Hitch</td>
+			<th><input type="button" value="Install" onclick="window.location='https://drive.corp.amazon.com/view/shocklp@/Scripts/Bypass_Hitch.user.js';"></th>
+		</tr>
+	</tbody>
+</table>
+
+<br>
+
+<table class="install">
+	<tbody>
+		<tr>
+			<th colspan="3">QHUD Only</th>
+		</tr>
+		<tr>
+			<th>Description</th>
+			<th>Script Name</th>
+			<th class="button"><input type="submit" onclick="install_qhud()" value="Install QHUD" /></th>
+		</tr>
+		<tr>
+			<td>Fits the Audit center table on the page so you don't have to scroll over in order to submit audits.</td>
+			<td>Audit Center Pro</td>
+			<th><input type="button" value="Install" onclick="window.location='https://drive.corp.amazon.com/view/shocklp@/Scripts/AuditCenter Pro.user.js';"></th>
+		</tr>
+	</tbody>
+</table>
+</div>
+<hr>
+
+<span class="headline" id="What_if_I_run_into_problems.3F"> What if I run into problems?</span>
+<div><p>Again, these scripts are <span id="reminder">not officially supported by Amazon</span>. The best you can do is check for updates, and if the problem isn't already fixed, reach out to <i>shocklp</i>.</p>
+</div>
+<span class="headline" id="Disable_TamperMonkey_or_individual_scripts">Disable TamperMonkey or individual scripts </span>
+
+<div>
+<table class="pad">
+	<tbody>
+		<tr>
+			<td>
+				<p>To disable individual scripts, click the TamperMonkey logo and uncheck each script you wish to disable.</p>
+				<img src="Media/disable_scripts.png" />
+			</td>
+			<td>
+				<p>To disable TamperMonkey entirely, you can click the TamperMonkey logo in the top right of your browser and select enable/disable.</p>
+				<img src="Media/disable_tampermonkey.png" />
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+<span class="headline" id="Check_for_Updates">Check for Updates</span>
+<br>
+<p>To check for updates to the scripts you have installed, click on the Tamper Monkey logo <img class="logo" src="Media/tmLogo.png" /> located in the upper right hand of your browser window and click 'Check for userscript updates' in the menu that appears.</p>
+<img src="Media/update_tampermonkey.png" />
+</div>
+
+
+<script>
+
+	function install_tampermonkey(){
+		window.open("https://addons.mozilla.org/firefox/downloads/file/988062/tampermonkey-4.7.5788-an+fx.xpi");
+		}
+
+	var win;
+	var scripts = [
+		"https://drive.corp.amazon.com/view/shocklp@/Scripts/Bypass_Hitch.user.js",
+		"https://drive.corp.amazon.com/view/shocklp@/Scripts/OOPS_Enhancement_Suite.user.js"
+		];
+		
+	var qhud = [
+		"https://drive.corp.amazon.com/view/shocklp@/Scripts/AuditCenter Pro.user.js"
+		];
+
+	var win=[];
+	function install_scripts(){
+		for( i=0; i< scripts.length; i++) {
+		win[i] = window.open(scripts[i]);
+		}
+	setTimeout(function(){
+		for( i=0; i< scripts.length; i++) {
+		win[i].close();
+		}
+		}, 30);
+		}
+		
+	var win=[];
+	function install_qhud(){
+		for( i=0; i< qhud.length; i++) {
+		win[i] = window.open(scripts[i]);
+		}
+	setTimeout(function(){
+		for( i=0; i< qhud.length; i++) {
+		win[i].close();
+		}
+		}, 30);
+		}
+  
+  </script>
+
+</body>
+</html>
