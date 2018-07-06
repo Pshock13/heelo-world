@@ -13,6 +13,13 @@ body {
     
 }
 
+table.projects td {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border: 2px outset #f00;
+}
+
 div#frame{
     width:100%;
     height:100%;
