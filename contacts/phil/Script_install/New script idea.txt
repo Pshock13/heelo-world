@@ -1,0 +1,32 @@
+https://www.reddit.com/r/GreaseMonkey/comments/3k92s8/how_to_change_words_in_a_web_page/
+
+
+-Change box barcode to the code more commonly used by packers
+-Also add matching color coordination
+
+deep-thought.corp.amazon.com
+
+box barcode => common code
+
+BNB => 1AE
+BY0 => A1
+BY1 => A3
+B01 => 1B2
+B41 => N3
+B45 => 1A5
+BNA => 1AD
+B48 => 1A9
+B47 => 1A7
+B4D => 1B4
+B4E => 1B9
+B4G => 1BB
+B42 => K3
+B4F => 1BA
+B02 => 1BF
+BNH => S5
+BNJ => 1BG
+BK2 => V3
+BK3 => V4
+BM3 => JM2
+BM4 => JM8
+BM5 => JM9

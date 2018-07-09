@@ -97,6 +97,21 @@ After you've installed TamperMonkey, you can pick and choose the scripts you'd l
 			<td>Bypass Hitch</td>
 			<th><input type="button" value="Install" onclick="window.location='https://drive.corp.amazon.com/view/shocklp@/Scripts/Bypass_Hitch.user.js';"></th>
 		</tr>
+		<tr>
+			<td>Adds a shipment ID barcode to printouts of OOPS; useful when sending runners so you can just scan in the page when they return.</td>
+			<td>Shipment ID Barcode *</td>
+			<th><input type="button" value="Install" onclick="window.location='https://drive.corp.amazon.com/view/jffrenc@/gm_scripts/oops-shipment-barcode.user.js';"></th>
+		</tr>
+		<tr>
+		<td>Changes the OOPS chute selection paged to a tabbed interface.</td>
+		<td>OOPS promptChute Mod *</td>
+		<th><input type="button" value="Install" onclick="window.location='https://drive.corp.amazon.com/view/jffrenc@/gm_scripts/OOPS_promptChute_Mod.user.js';"></th>
+		</tr>
+		<tr>
+		<td>Shows shipment info (things like Box size, packer, station, chute items were marked missing from, etc.) in OOPS.</td>
+		<td>HeroData in OOPS *</td>
+		<th><input type="button" value="Install" onclick="window.location='https://drive.corp.amazon.com/view/jffrenc@/gm_scripts/HeroData_in_OOPS.user.js';"></th>
+		</tr>
 	</tbody>
 </table>
 
@@ -119,6 +134,7 @@ After you've installed TamperMonkey, you can pick and choose the scripts you'd l
 		</tr>
 	</tbody>
 </table>
+<p>* These scripts were written by <em>jffrenc</em> and no longer being supported.</p>
 </div>
 <hr>
 
@@ -159,7 +175,10 @@ After you've installed TamperMonkey, you can pick and choose the scripts you'd l
 	var win;
 	var scripts = [
 		"https://drive.corp.amazon.com/view/shocklp@/Scripts/Bypass_Hitch.user.js",
-		"https://drive.corp.amazon.com/view/shocklp@/Scripts/OOPS_Enhancement_Suite.user.js"
+		"https://drive.corp.amazon.com/view/shocklp@/Scripts/OOPS_Enhancement_Suite.user.js",
+		"https://drive.corp.amazon.com/view/jffrenc@/gm_scripts/oops-shipment-barcode.user.js",
+		"https://drive.corp.amazon.com/view/jffrenc@/gm_scripts/OOPS_promptChute_Mod.user.js",
+		"https://drive.corp.amazon.com/view/jffrenc@/gm_scripts/HeroData_in_OOPS.user.js"
 		];
 		
 	var qhud = [
