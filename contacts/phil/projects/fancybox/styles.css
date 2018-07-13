@@ -56,11 +56,11 @@ header h3 {
 }
 
 .gallery img {
-	display: block;
-	padding: 5px;
-	background: #42517f;
-	border: 1px solid #99adeb;
-	box-shadow: 1px 1px 2px #000;
+display: block;
+padding: 5px;
+background: #42517f;
+border: 1px solid #99adeb;
+box-shadow: 1px 1px 2px #000;
 }
 
 .gallery img:hover {
