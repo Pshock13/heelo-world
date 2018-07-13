@@ -22,23 +22,42 @@ body {
     justify-content: space-around;
     align-items: center;
 }	
+
+div#photo,
+div#about_me,
+div#botleft,
+div#projects{
+    border: 2px outset #f00;
+}
+
+div#photo{
+    border-left: none;
+    border-top: none;
+    border-bottom-right-radius: 20px;
+}
+
+div#about_me{
+    border-right: none;
+    border-top: none;
+    border-bottom-left-radius: 20px;
+}
+
 div#botleft{
-    border: 2px solid #f00;
     border-left: none;
     border-bottom: none;
     border-top-right-radius: 20px;
 }
+
 div#projects {
     display: flex;
-    flex-direction:column;
-    flex-wrap:wrap;
+    flex-flow: column wrap;
+    align-items:stretch;
     
-    border: 2px solid #f00;
     border-bottom: none;
     border-right: none;
-    border-bottom-right-radius: 20px;
     border-top-left-radius: 20px;
     padding: 5px;
+    height:360px;
 }
 
 /*div.projects span{
@@ -63,6 +82,7 @@ div#container {
     background-color: hsla(0,100%,100%,.25);
     width:1200px;
     min-height:600px;
+    height:600px;
     border-radius:20px;
     box-shadow: 2px 2px 5px red;
 }
@@ -84,7 +104,7 @@ div#container {
 	top: 0;
 	left: 0;
 	z-index: 1000;
-    	pointer-events: none;
+    pointer-events: none;
 	opacity: .8;
 }
 
@@ -101,32 +121,45 @@ a, a:hover, a:visited{
     color:red;
 }
 
-#return{
+input#return{
     position: fixed;
     top:0;
     left:0;
     margin-top:20px;
     margin-left:20px;
+    border-radius:10px;
+    cursor: pointer;
 }
 
-#proj_buttons {
-    
-}
-
-
-input {
+input#proj_buttons{
     margin:3px;
+    height:50px;
+    border-radius: 20px;
     transition-duration: 0.6s;
     transition-delay: .1s;
 }
 input#proj_buttons:hover {
-    box-shadow: 2px 2px 5px #f00;
-    border-radius: 10px;
+    box-shadow: 0px 0px 50px 5px #f00;
+    border-radius: 20px;
     cursor: pointer;
+    color: #f00;
+    position: inherit;
+    z-index:100;
 }
 
-input#disabled:hover, input#disabled{
+ input#disabled{
+    margin:3px;
+    height:50px;
+    border-radius: 20px;
 	cursor: not-allowed;
 	opacity:0.3;
-	background-color:none;
+    background-color:none;
+}
+
+input#disabled:hover{
+    background-color:#f00;
+}
+
+input#disabled:active{
+    pointer-events:none;
 }
