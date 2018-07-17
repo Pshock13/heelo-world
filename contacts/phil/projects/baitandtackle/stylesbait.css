@@ -2,51 +2,60 @@
 /* CSS Document */
 
 body {
-margin-top: 10;
-background-color: lightgray;
-font-family: Georgia, "Times New Roman", Times, serif;
-font-size: 81.25%;
+	background-image:url(media/fish.jpg);
+	background-size:100%;
+	background-attachment: fixed;
+	margin-top: 10;
+	background-color: lightgray;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 81.25%;
 }
 
 /* the styles for the div tags that divide the pag into sections */
 #page {
-	width: 760px
+	width: 760px;
 	margin: auto;
-	background-color: white;
+	background-color: hsla(1, 0%, 100%, .9);
 	border: 3px solid black;
 	border-top: none;
+	box-shadow:5px 5px 20px 1px#000;
 }
 
-#header, #main, #footer {
+header, article, footer {
 	padding-left: 0.5em;
 	padding-right: 0.5em;
 }
 
-#header {
+header {
 	border-bottom: 1px solid gray;
 }
-#main{
+article{
 	padding-top: 1em;
 	padding-left: 0;
 }
 
 #sidebar {
-	position: absolute;
+	position: sticky;
 	width: 10em;
+	top:0;
+	z-index: 99;
+	top:10px;
+	float:left;
 }
 
 #content {
 	margin-left: 10em;
+	margin-top:0;
 }
 
-#footer {
+footer {
 	border-top: 1px solid gray;
 	padding-bottom: 0.5em;
 }
 /* the styles for the HTML elements */
 
 h1, h2 {
-	color: darkorange;
+	color: rgb(255, 140, 0);
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
@@ -54,28 +63,32 @@ h1 {
 	font-size: 150%;
 	margin-top: 0;
 	padding-top: 0.5em;
+	text-shadow:1px 1px 0px #000;
 }
 h2 {
 	font-size: 120%;
+	text-shadow:1px 1px 0px #000;
 }
 
 ul {
 	margin: 0 0 1em 0;
 	padding: 0 0 0 2.5em;
 }
+
 li {
 	margin: 0;
 	padding:0;
 }
+
 a {
 	color:mediumBlue;
 	list-style-type:none;
 	text-decoration: none;
 	font-weight: bold;
-	border-bottom: 1px dashed darkOrange;
+	border-bottom: 1px dashed rgb(255, 140, 0);
 }
 a:hover {
-	border-bottom: 1px solid darkOrange;
+	border-bottom: 1px solid rgb(255, 140, 0);
 }
 
 /* the styles for the HTML classes */
@@ -88,11 +101,27 @@ a:hover {
 p.first {
 	margin-top: 0;
 }
-ul.nav {
+nav ul {
 	margin: 0;
-	padding-left: 1.25em;
+	padding-left:0;
 	list-style-type: none;
 }
-ul.nav.li {
+nav li{
 	padding-bottom: 0.5em;
+	background-color: rgb(255, 140, 0);
+	width:80%;
+	padding:5px;
+	margin:5px;
+	text-align:center;
+	border-radius:5px;
+}
+
+#bass{
+	width:300px;
+	position: sticky;
+	float:right;
+	margin-right:-150px;
+	opacity: 1.0;
+	z-index:100;
+	bottom:-150px;
 }

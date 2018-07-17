@@ -14,11 +14,11 @@ article, aside, figure, footer, header, hgroup,	menu, nav, section {
 .container {	
 	width: 700px;	
 	margin: 30px auto 0;
-	box-shadow: 3px 3px 5px #7b00c5;
+	box-shadow: 3px 3px 5px #000;
 }	
 		
 header {	
-	background: rgba(51,0,0,1);	
+	background: rgba(1,0,0,1);	
 	border-bottom: 1px solid #000;	
 }	
 		
@@ -34,7 +34,7 @@ header h3 {
 		
 #content {	
 	background-color: #848c9c;	
-	background: linear-gradient(to top, #848c9c, #848c9c 0%, #43A6CB 50%, #7b00c5 100%);
+	background: linear-gradient(to top, #848c9c, #43A6CB, #7b00c5);
 	padding-top: 30px;
 	padding-bottom: 30px;
 	overflow: hidden;
@@ -53,6 +53,12 @@ header h3 {
 .gallery li {
 	float:left;
 	margin: 15px;
+}
+
+#logo{
+	border:none;
+	background:none;
+	box-shadow:none;
 }
 
 .gallery img {
@@ -92,23 +98,15 @@ box-shadow: 1px 1px 2px #000;
 	background-color: #7b00c5;
 	padding-top: 6px;
 	padding-bottom: 6px;
+	text-decoration: none;
 }
 	
 #mainnav a:hover,
 #mainnav a:active,
 #mainnav a:focus,
 #mainnav a.thispage {
-	text-decoration: none;
-	background-color: #43A6CB;#logo {
-	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
-	margin: 5px;
-	padding: 5px;
-	height: 200px;
-	width: 800px;
-	border: thin double rgba(0,0,0,1);
-	text-transform: uppercase; 	color: rgba(102,0,0,1); 	
+	background-color: #43A6CB;
 }
-
 
 .footer {
 	width: 750px;
