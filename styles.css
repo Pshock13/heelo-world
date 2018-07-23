@@ -1,24 +1,42 @@
 * {
 	box-sizing: border-box;
+}
+
+body{
 	margin:0;
 	padding:0;
+	background-color: rgba(255, 255, 255, .25);
+	color: black;
+}
+
+nav ul{
+	margin:10px 0 0 0;
+	padding:0;
+}
+
+nav ul li{
+	list-style-type: none;
+	padding:10px;
+	margin:1px;
+	background: hsla(192, 100%, 50%, .5);
+}
+
+nav ul li:hover{
+	background: hsla(192, 100%, 50%, 1.0);
 }
 
 body.index{
 	background: #000 url("media/bg.jpg") no-repeat center center;
 	background-attachment: fixed;
-	/*border: 1px solid red;*/
 }
 
 a img { /*This selector removes the blue border around image links that some browsers display. */
     border: none;
-    
 }
 
 a:link, a:visited{
 	text-decoration: none;
 	color: hsla(192, 100%, 50%, 1.0); /*turqoise*/
-    
 }
 
 a:hover{
@@ -29,10 +47,10 @@ a:hover{
 #index{
 	width:100%;
 	height:100%;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 
 #container {
@@ -46,15 +64,23 @@ align-items: center;
     	align-items: flex-start;
 }
 
-#header {
+header{
+	border-bottom:1px solid #fff;
+}
+
+header.main{
 	width: 250px;
+	height:100px;
 	margin: 5px auto 0 auto;
 	/*border: 1px solid blue;*/
 	/*box-shadow: 1px 3px 1px 1px  rgba(255, 0, 0, 0.5);*/
 }
 
+header img{
+	width:250px;
+}
 
-#nav {
+nav {
 	background-color: rgba(255, 255, 255, .25);
 	color:hsla(192, 100%, 50%, 1.0);
 	/*width: 250px;*/
@@ -70,6 +96,16 @@ align-items: center;
 	box-shadow: 15px 15px 0px 0px  rgba(0, 204, 255, 0.5);
 	text-shadow:1px 1px 0 rgba(0,0,0,1.0);
 	text-align:center;
+}
+
+.first{
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.last{
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
 
 #content {
@@ -91,7 +127,7 @@ align-items: center;
     height: 100%;
 }
 
-#footer {
+footer {
 	color:white;
 	text-shadow:1px 1px 0 rgba(0,0,0,1.0);
 	width: 100%;
@@ -101,7 +137,6 @@ align-items: center;
 
 #center{
 	text-align: center;
-	border:1px, solid red;
 }
 
 .overlay {
@@ -119,8 +154,6 @@ table.nav td{
 }
 
 .home {
-	background-color: rgba(255, 255, 255, .25);
-	color: black;
 	height:100vh;
 	display:flex;
 	flex-direction:column;
@@ -131,8 +164,6 @@ table.nav td{
 }
 
 .videos{
-	background-color: rgba(255, 255, 255, .25);
-	color: black;
 	text-align: center;
 	height:100vh;
 	display:flex;
@@ -140,27 +171,29 @@ table.nav td{
 	align-items:center;
 }
 
-.signup{
-	background-color: rgba(255, 255, 255, .25);
-	color: black;
-	margin: 10px;
-    
+.photo{
+	height:300px;
+	width:300px;
+	border-radius:100%;
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	display:inline-block;
+	margin:200px 10px 0 10px;;
 }
 
-.contact{
-	background-color: rgba(255, 255, 255, .25);
-	color: black;
-    
+.photo:hover{
+	box-shadow: 0 0 10px  hsla(192, 100%, 50%, 1);
+	opacity: .5;
 }
 
-.poll{
-	color:#00ccff;
-	text-shadow:1px 1px 0 rgba(0,0,0,1.0);
-	text-align: center;
-    margin-top:10px;
+#phil{
+	background-image:url("contacts/phil/media/mugshot.jpg");
 }
 
+#mike{
+	background-image:url("contacts/mike/media/hhavok.jpg");
+}
 a.hidden{
-	color:white;
-    
+	color:#fff;
 }

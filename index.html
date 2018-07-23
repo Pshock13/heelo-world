@@ -13,70 +13,29 @@
             
         <div class="overlay"><img src="media/UNDER_CONSTRUCTION.png" /></div>
 
-<div id="index">
-        <div id="container">
-            <div id="nav">
-                <div id="header">
-                    <a href="index.html"><img src="media/logo.png" title="logo" width="250px" height="100px"/></a>
-                </div>
-                    <hr noshade color="white">
-                        <table class="nav" border="0" width="250px">
-                            <tr>
-                                <td>
-                                    <a href="home.html" target="target">Home</a>
-                                </td>
-                                <td>
-                                    <a href="videos.html" target="target">Videos</a>
-                                </td>
-                                <td>
-                                    <a href="signup.html" target="target">Sign Up</a>
-                                </td>
-                                <td>
-                                    <a href="contact.html" target="target">Contact</a>
-                                </td>
-                            </tr>
-                        </table>
-                        <hr noshade color="white">                  
-                <div>
-                    <b><p>Poll of the Week</b></p>
-                    <hr noshade color="#00ccff" margin="20px">
-                    <!--Question, All answers, and submit button are inside one data cell-->
-                    <form method="post" action="">
-                        <p><b>Do you like web polls?</b></p>
-                        <div align="left">
-                            <!--answer options-->
-                            <input type="radio" name="answer" value="1" />Yes I do<br>
-                            <input type="radio" name="answer" value="2" />No, I do not<br>
-                            <input type="radio" name="answer" value="3" />I dont know<br>
-                            <input type="radio" name="answer" value="4" />Depends on the question<p>
-                        </div>
-                            <!--submit button-->
-                        <div>
-                            <input type="submit" name="submit" value="Submit">
-                        </div>
-                    </form>
-                </div>
-                <hr noshade color="white">
-                <center>
-                    <b>Comments</b>
-                    <br>
-                    <textarea name="comments" rows="4" cols="25" placeholder="Enter your comments here...">
+        <div id="index">
+            <div id="container">
+                <nav>
+                    <header id="main">
+                        <a href="index.html"><img src="media/logo.png" title="logo" alt="Test Labs logo" /></a>
+                    </header>
+                                <ul>
+                                    <a href="home.html" target="target"><li class="first">Home</li></a>
+                                    <a href="videos.html" target="target"><li>Videos</li></a>
+                                    <a href="signup.html" target="target"><li>Sign Up</li></a>
+                                    <a href="contact.html" target="target"><li>Contact</li></a>
+                                    <a href="about.html" target="target"><li class="last">About</li></a>
+                                </ul>                        
+                </nav>
+                    <div id="content">
+                        <iframe frameborder="0" name="target" scrolling="yes" src="home.html">
 
-                    </textarea>
-                    <br>
-                    <input name="username" placeholder="Username" type="text" />
-                    <input type="submit" value="Submit" />
-                </center>
-            </div>
-            <div id="content">
-                <iframe frameborder="0" name="target" scrolling="yes" src="home.html">
-
-                </iframe>
-            </div>
-<div id="footer">
-                Copyright &copy; 2016-18 Pshock<sup><a href="https://www.twitch.tv/pshock13" class="hidden">13</a></sup> &#x95; All rights reserved
-            </div>
-        </div>
-       </div> 
+                        </iframe>
+                    </div>
+                    <footer>
+                        Copyright &copy; 2016-18 Pshock<sup><a href="https://www.twitch.tv/pshock13" class="hidden">13</a></sup> &#x95; All rights reserved
+                    </footer>
+                </div>
+        </div> 
     </body>
 </html>

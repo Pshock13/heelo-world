@@ -2,12 +2,9 @@
 /* CSS Document */
 
 body {
-	background-image:url(media/fish.jpg);
-	background-size:100%;
-	background-attachment: fixed;
-	margin-top: 10;
-	background-color: lightgray;
+	background:#fefefe url(media/fish.jpg) no-repeat fixed center top;
 	font-family: Georgia, "Times New Roman", Times, serif;
+	background-size: 100%; 
 	font-size: 81.25%;
 }
 
@@ -120,8 +117,9 @@ nav li{
 	width:300px;
 	position: sticky;
 	float:right;
-	margin-right:-150px;
 	opacity: 1.0;
 	z-index:100;
 	bottom:-150px;
+	margin-bottom:0;
+	margin-right:-100px;
 }
