@@ -3,67 +3,160 @@
     <head>
         <title>Phillip Shockley | Resum&#233;</title>
         <link type="text/css" rel="stylesheet" href="styles.css"/>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(".nav").on("click", "li", function(){
+                    var tabsId = $(this).attr("id");
+                    $(this).addClass("thisPage").siblings().removeClass("thisPage");
+                    $("#" + tabsId + "-content").addClass("active").siblings().removeClass("active");
+                })
+            })
+            </script>
     </head>
     <body>
+        <nav class="nav">
+            <ul>
+                <li id="tab-one" class="thisPage">Cover Letter</li>
+                <li id="tab-two">Work Exp.</li>
+                <li id="tab-three">Portfolio</li>
+                <li id="tab-four">References</li>
+            </ul>
+        </nav>
+        <!--End Nav-->
         <div class="container">
-            <nav>
-                <ul>
-                    <a href=""><li id="thisPage">Work Exp.</li></a>
-                    <a href=""><li>Cover Letter</li></a>
-                    <a href=""><li>Portfolio</li></a>
-                    <a href=""><li>References</li></a>
-                </ul>
-            </nav>
             <div class="left">
                 <div class="about">
                     <h1>Phillip Shockley</h1>
                     <h4>&lt; Web Developer / Designer /&gt;</h4>
-                </div>
+                </div><!--End About-->
                     <p id="info1">Dover, DE<br>
                     Tel. 443 786 6030<br>
                     Birth. 1 Apr 1991</p>
                     <p id="info2">Email. pshock13@live.com<br>
                     Website. mysite.this<br>
                     Portfolio. pshock13.github.io/heelo-world</p>
+										
                 <div id="exp">
-                    <h2>Work Experience</h2>
-                    <div class="details">
-                        <h3 class="inline">Quality Coach</h3><span class="date">/ Feb 2018 - Now</span>
-                        <p> <span class="job">Amazon Inc.</span> - Monitor FPY and provide coaching to those with high outstanding numbers</p>
-						<h3 class="inline">Ambassador</h3><span class="date">/  2017 - Now</span>
-                        <p> <span class="job">Amazon Inc.</span> - Train new employees on the basics of the building as a whole as well as train them in their specific paths.</p>
-                        <h3 class="inline">Problem Solver</h3><span class="date">/ 2017 - Jun 2018</span>
-                        <p><span class="job">Amazon Inc.</span> - Check in, fix, and send out packages without defects.</p>
-                        <h3 class="inline">Supervisor</h3><span class="date">/ ?? - Dec 2016</span>
-                        <p><span class="job">RGIS Inventory Specialists</span> - Oversee the audit of stores and ensure a quality count of inventory.</p>
-                    </div>
-                    <h2>Education</h2>
-                    <div class="details">
-                        <h3 class="inline">Ruby on Rails</h3><span class="date">/ Jun - Nov 2018</span>
-                        <p><span class="job">Amazon Career Choice</span> - HTML5, CSS3, Javascript, Bootstrap, Ruby</p>
-                        <h3 class="inline">Comp TIA A+ Certification</h3><span class="date">/ Apr - Sept 2011</span>
-                        <p><span class="job">Harpers Ferry Job Corps</span> - </p>
-                        <h3 class="inline">Graphic Design</h3><span class="date">/ 2007 - Now</span>
-                        <p><span class="job">Caroline Career & Technology Center</span> - Web Design I & II, Information Management Systems, Informatinon and Media Publication</p>
-                    </div>
-                    <div class="personal">
-                        <div class="skills">
+                    <div id="tab-one-content" class="hide active">
+                        <h2>Cover Letter</h2>
+                        <p id="greeting">Dear Mrs. Smith,</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus orci diam, fermentum a auctor vel, ultricies id quam. Integer id feugiat mi, sit amet faucibus justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean vulputate nibh est, molestie laoreet nibh vestibulum nec. Nam lorem ipsum, ultrices eu sapien id, placerat pharetra odio. Pellentesque hendrerit ante ac augue varius, vitae scelerisque elit vulputate. In consequat augue ut pharetra ultricies. Nulla ac ultrices ligula. Fusce tincidunt orci et mauris pharetra, sed pharetra est posuere. Duis viverra viverra nulla, et tincidunt mi malesuada eu. Nam blandit lacus quis aliquet suscipit. Vestibulum molestie sem mi, vitae tincidunt leo consequat eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut finibus dolor.</p>
+                            <p>Vestibulum felis sapien, feugiat ac libero quis, porttitor aliquet lectus. Morbi suscipit nisi vel nulla condimentum commodo. Duis tellus odio, bibendum vitae faucibus a, tristique at ante. Fusce lorem odio, fermentum et pulvinar eget, dictum nec elit. Mauris tincidunt vestibulum facilisis. Aliquam quis lobortis massa, a vestibulum magna. Etiam nec felis non mauris rutrum sollicitudin. Sed at elit sit amet massa maximus tincidunt quis in tellus. Etiam ultricies, nunc id viverra porttitor, sem augue aliquet nibh, venenatis tristique leo magna at dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent lacinia felis quam, et dapibus quam rhoncus id. Proin a mollis purus, ut pulvinar eros. </p>
+                            <p>Sincerly,<br>
+                            Phillip Shockley</p>
+                            <img id="signature" src="media/signature.gif"/>
+                    </div><!--End Tab One Contents-->
+                    <div id="tab-two-content" class="hide">
+                        <h2>Work Experience</h2>
+                        <div class="details">
+                            <h3 class="inline">Quality Coach</h3><span class="date">/ Feb 2018 - Now</span>
+                            <p> <span class="job">Amazon Inc.</span> - Monitor FPY and provide coaching to those with high outstanding numbers</p>
+                            <h3 class="inline">Ambassador</h3><span class="date">/  2017 - Now</span>
+                            <p> <span class="job">Amazon Inc.</span> - Train new employees on the basics of the building as a whole as well as train them in their specific paths.</p>
+                            <h3 class="inline">Problem Solver</h3><span class="date">/ 2017 - Jun 2018</span>
+                            <p><span class="job">Amazon Inc.</span> - Check in, fix, and send out packages without defects.</p>
+                            <h3 class="inline">Supervisor</h3><span class="date">/ ?? - Dec 2016</span>
+                            <p><span class="job">RGIS Inventory Specialists</span> - Oversee the audit of stores and ensure a quality count of inventory.</p>
+                        </div><!--End Exp Details-->
+                        <h2>Education</h2>
+                        <div class="details">
+                            <h3 class="inline">Ruby on Rails</h3><span class="date">/ Jun - Nov 2018</span>
+                            <p><span class="job">Amazon Career Choice</span> - HTML5, CSS3, Javascript, Bootstrap, Ruby</p>
+                            <h3 class="inline">Comp TIA A+ Certification</h3><span class="date">/ Apr - Sept 2011</span>
+                            <p><span class="job">Harpers Ferry Job Corps</span> - </p>
+                            <h3 class="inline">Informatinon and Media Publication</h3><span class="date">/ 2007 - Now</span>
+                            <p><span class="job">Caroline Career & Technology Center</span> - Web Design I & II, Graphic Design I, Information Management Systems</p>
+                        </div><!--End Education Details-->
+                        <div class="personal">
+                            <div class="skills">
 
-                        </div>
-                        <div class="interests">
+                            </div><!--End Skills-->
                             <h2>Interests</h2>
-                            <span><img src="media/game.svg" alt="Game controller Icon" class="ico">Gaming</span>
-                            <span><img src="media/drone.svg" alt="Drone Icon" class="ico">Aerial Photography</span>
-                            <span><img src="media/music.svg" alt="Music Library Icon" class="ico">Music</span>
-                            <span><img src="media/bike.svg" alt="Motorcycle Icon" class="ico">Motorcycles</span>
+                            <div id="interests">
+                                <div><img src="media/game.svg" alt="Game controller Icon" class="ico"><p>Gaming</p></div>
+                                <div><img src="media/drone.svg" alt="Drone Icon" class="ico"><p>Aerial Photography</p></div>
+                                <div><img src="media/music.svg" alt="Music Library Icon" class="ico"><p>Music</p></div>
+                                <div><img src="media/bike.svg" alt="Motorcycle Icon" class="ico"><p>Motorcycles</p></div>
+                                <div><img src="media/code.svg" alt="Coding Icon" class="ico"><p>Coding</p></div>
+                            </div><!--End Interests-->
+                        </div><!--End Personal-->
+                    </div><!--End Tab Two contents-->
+                    <div id="tab-three-content" class="hide">
+                        <h2>Work Samples</h2>
+                        <div class="samples">
                         </div>
+                    </div><!--End Tab Three Contents-->
+                    <div id="tab-four-content" class="hide">
+                        <h2>References</h2>
                     </div>
-                </div>
-            </div>
+                </div><!--End Exp-->
+            </div><!--End Left-->
+
+
             <div class="right">
-                <img id="photoID" src="media/mugpic.jpg"/>
-               <h3>Computer Skills</h3>
-            </div>
-        </div>
+                <div id="photoID"></div>
+                    <h3>Computer Skills</h3>
+									  <div class="single-chart">
+									    <svg viewbox="0 0 36 36" class="circular-chart blue">
+									      <path class="circle-bg"
+									        d="M18 2.0845
+									          a 15.9155 15.9155 0 0 1 0 31.831
+									          a 15.9155 15.9155 0 0 1 0 -31.831"/>
+									      <path class="circle"
+									        stroke-dasharray="60, 100"
+									        d="M18 2.0845
+									          a 15.9155 15.9155 0 0 1 0 31.831
+									          a 15.9155 15.9155 0 0 1 0 -31.831"/>
+									    </svg>
+											<span>Photoshop</span>
+									  </div>
+										
+										<div class="single-chart">
+									    <svg viewbox="0 0 36 36" class="circular-chart blue">
+									      <path class="circle-bg"
+									        d="M18 2.0845
+									          a 15.9155 15.9155 0 0 1 0 31.831
+									          a 15.9155 15.9155 0 0 1 0 -31.831"/>
+									      <path class="circle"
+									        stroke-dasharray="85, 100"
+									        d="M18 2.0845
+									          a 15.9155 15.9155 0 0 1 0 31.831
+									          a 15.9155 15.9155 0 0 1 0 -31.831"/>
+									    </svg>
+											<span>HTML</span>
+										</div>
+											
+										<div class="single-chart">
+									    <svg viewbox="0 0 36 36" class="circular-chart blue">
+									      <path class="circle-bg"
+									        d="M18 2.0845
+									          a 15.9155 15.9155 0 0 1 0 31.831
+									          a 15.9155 15.9155 0 0 1 0 -31.831"/>
+									      <path class="circle"
+									        stroke-dasharray="70, 100"
+									        d="M18 2.0845
+									          a 15.9155 15.9155 0 0 1 0 31.831
+									          a 15.9155 15.9155 0 0 1 0 -31.831"/>
+									    </svg>
+											<span>CSS</span>
+										</div>
+										
+										<div class="single-chart">
+									    <svg viewbox="0 0 36 36" class="circular-chart blue">
+									      <path class="circle-bg"
+									        d="M18 2.0845
+									          a 15.9155 15.9155 0 0 1 0 31.831
+									          a 15.9155 15.9155 0 0 1 0 -31.831"/>
+									      <path class="circle"
+									        stroke-dasharray="5, 100"
+									        d="M18 2.0845
+									          a 15.9155 15.9155 0 0 1 0 31.831
+									          a 15.9155 15.9155 0 0 1 0 -31.831"/>
+									    </svg>
+											<span>JavaScript</span>
+										</div>
+                </div><!--End Right-->
+        </div><!--End Container-->
     </body>
 </html>

@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+    <head>
+        <title>jQuery Tabs</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".box").on("click", "li", function(){
+                var tabsId = $(this).attr("id");
+                $(this).addClass("active").siblings().removeClass("active");
+                $("#" + tabsId + "-content-box").addClass("active").siblings().removeClass("active");
+            })
+        })
+        </script>
+    </head>
+    <body>
+        <div class="box"><ul>
+            <li id="tab-one" class="active">
+                <i class="fab fa-facebook"></i>
+                <h4>Facebook</h4>
+            </li>
+            <li id="tab-two">
+                <i class="fa fa-code"></i>
+                <h4>Code</h4>
+            </li>
+            <li id="tab-three">
+                <i class="fab fa-discord"></i>
+                <h4>Discord</h4>
+            </li>
+            <li id="tab-four">
+                <i class="fa fa-gamepad"></i>
+                <h4>Games</h4>
+            </li>
+        </ul>
+        <div class="content">
+            <div id="tab-one-content-box" class="hide active">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus orci diam, fermentum a auctor vel, ultricies id quam. Integer id feugiat mi, sit amet faucibus justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean vulputate nibh est, molestie laoreet nibh vestibulum nec. Nam lorem ipsum, ultrices eu sapien id, placerat pharetra odio. Pellentesque hendrerit ante ac augue varius, vitae scelerisque elit vulputate. In consequat augue ut pharetra ultricies. Nulla ac ultrices ligula. Fusce tincidunt orci et mauris pharetra, sed pharetra est posuere. Duis viverra viverra nulla, et tincidunt mi malesuada eu. Nam blandit lacus quis aliquet suscipit. Vestibulum molestie sem mi, vitae tincidunt leo consequat eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut finibus dolor.</p>
+            </div>
+            <div id="tab-two-content-box" class="hide">
+                <p>Vestibulum felis sapien, feugiat ac libero quis, porttitor aliquet lectus. Morbi suscipit nisi vel nulla condimentum commodo. Duis tellus odio, bibendum vitae faucibus a, tristique at ante. Fusce lorem odio, fermentum et pulvinar eget, dictum nec elit. Mauris tincidunt vestibulum facilisis. Aliquam quis lobortis massa, a vestibulum magna. Etiam nec felis non mauris rutrum sollicitudin. Sed at elit sit amet massa maximus tincidunt quis in tellus. Etiam ultricies, nunc id viverra porttitor, sem augue aliquet nibh, venenatis tristique leo magna at dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent lacinia felis quam, et dapibus quam rhoncus id. Proin a mollis purus, ut pulvinar eros. </p>
+            </div>
+            <div id="tab-three-content-box" class="hide">
+                <p>In pharetra lorem sit amet finibus placerat. Duis lacinia cursus sagittis. Quisque et ipsum tempor, finibus justo congue, placerat ex. Fusce bibendum mi vitae orci scelerisque, at volutpat turpis bibendum. Morbi sed ante eget enim venenatis sollicitudin et eu elit. Ut quis sagittis lacus. Curabitur nec neque in eros tristique feugiat. Curabitur ut pharetra metus.</p>
+            </div>
+            <div id="tab-four-content-box" class="hide">
+                <p>Aenean lorem odio, maximus a finibus et, volutpat eu ipsum. Etiam porttitor pellentesque libero et bibendum. Curabitur leo nibh, fermentum non leo ut, cursus viverra metus. Etiam venenatis malesuada felis, finibus suscipit enim mollis eget. Nunc varius sapien eu risus iaculis, sagittis ullamcorper arcu vestibulum. Nullam dictum justo a neque viverra fermentum. Nulla vitae ante at mauris dignissim volutpat nec sed massa. In vulputate fermentum sapien. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam convallis, tortor mattis aliquam sollicitudin, lectus est consectetur velit, ac laoreet dui arcu ut est. Proin quis enim ac dui condimentum hendrerit. Maecenas ipsum magna, vehicula vel convallis quis, sodales vel lacus. Vestibulum ante purus, efficitur id sagittis sed, scelerisque vel risus. Vivamus scelerisque bibendum magna, eget aliquet arcu. Duis eu tortor non neque vulputate ultrices eget et purus. Duis sagittis ex a nibh imperdiet pharetra. </p>
+            </div>
+        </div>
+    </div>
+    </body>
+    
+</html>

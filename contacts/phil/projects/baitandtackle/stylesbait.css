@@ -34,10 +34,25 @@ article{
 #sidebar {
 	position: sticky;
 	width: 10em;
-	top:0;
 	z-index: 99;
 	top:10px;
 	float:left;
+}
+
+nav ul {
+	margin: 0;
+	padding-left:0;
+	list-style-type: none;
+}
+
+nav li{
+	padding-bottom: 0.5em;
+	background-color: rgb(255, 140, 0);
+	width:80%;
+	padding:5px;
+	margin:5px;
+	text-align:center;
+	border-radius:5px;
 }
 
 #content {
@@ -97,20 +112,6 @@ a:hover {
 }
 p.first {
 	margin-top: 0;
-}
-nav ul {
-	margin: 0;
-	padding-left:0;
-	list-style-type: none;
-}
-nav li{
-	padding-bottom: 0.5em;
-	background-color: rgb(255, 140, 0);
-	width:80%;
-	padding:5px;
-	margin:5px;
-	text-align:center;
-	border-radius:5px;
 }
 
 #bass{

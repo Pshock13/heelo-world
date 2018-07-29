@@ -40,6 +40,12 @@ div#about_me{
     border-right: none;
     border-top: none;
     border-bottom-left-radius: 20px;
+    padding: 20px;
+}
+
+div#about_me p{
+    text-shadow:none;
+
 }
 
 div#botleft{
