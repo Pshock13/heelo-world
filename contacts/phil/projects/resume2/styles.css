@@ -6,13 +6,13 @@
 :root{
 /*Blue*/
     --dark: #6994b4;
-		--light: #146eb4;
+	--light: #146eb4;
 /*Purple*/
     /*--dark: #915DB1;
-		--light: #B133FF;*/
+	--light: #B133FF;*/
 /*Orange*/
     /*--dark: #B14610;
-		--light: #FF5F0F;*/
+	--light: #FF5F0F;*/
 }
 
 body{
@@ -50,6 +50,8 @@ nav li{
     text-decoration:none;
     font-weight: bold;
     cursor:pointer;
+	overflow: hidden;
+	white-space: nowrap;
 }
 
 
@@ -80,7 +82,6 @@ nav li{
     padding:30px 0px 30px 0px;
     margin:0;
     min-height:100vh;
-		
 }
 
 .left h1,
@@ -185,33 +186,33 @@ h2{
 
 /*Skills percentage circles*/
 .circular-chart.blue .circle {
-  stroke: var(--dark);
+    stroke: var(--dark);
 }
 
 .single-chart {
-  width: 33%;
-  justify-content: space-around ;
+    width: 33%;
+    justify-content: space-around ;
     margin: 0 auto;
 }
 
 .circular-chart {
-  display: block;
-  margin: 10px auto;
-  max-width: 80%;
-  max-height: 250px;
+    display: block;
+    margin: 10px auto;
+    max-width: 80%;
+    max-height: 250px;
 }
 
 .circle-bg {
-  fill: none;
-  stroke: #d9d6d1;
-  stroke-width: 4;
+    fill: none;
+    stroke: #d9d6d1;
+    stroke-width: 4;
 }
 
 .circle {
-  fill: none;
-  stroke-width: 2;
-  stroke-linecap: round;
-  animation: progress 1s ease-out forwards;
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    animation: progress 1s ease-out forwards;
 }
 
 @keyframes progress {
@@ -255,6 +256,7 @@ h2{
         box-shadow: none;
         border-radius:0;
         border-bottom:1px solid rgba(0, 0, 0, .5);
+				border-right:1px solid rgba(0, 0, 0, .5);
         width:100%;
     }
 }
