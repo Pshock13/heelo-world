@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
     <head>
+            <meta charset="utf-8">
             <meta name="author" content="Phillip Shockley/Pshock13">
             <meta name="owner" content="Phillip Shockley/Pshock13">
             <link rel="shortcut icon" href="media/icon.gif">
@@ -13,9 +14,16 @@
                     var tabsId = $(this).attr("id");
                     $(this).addClass("thisPage").siblings().removeClass("thisPage");
                     $("#" + tabsId + "-content").addClass("active").siblings().removeClass("active");
-                })
+
+                    var vid = document.getElementsByTagName("iframe");
+                    console.log(vid);
+                    $('vid').each(function(){
+                        $(this).stopVideo();
+                        });
+                    });
+                    
             })
-            
+
             //slideshow
             var i = 0; //start point
             var images = []; //Empty array
