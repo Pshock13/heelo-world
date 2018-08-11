@@ -1,56 +1,49 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-            <meta charset="utf-8">
-            <meta name="author" content="Phillip Shockley/Pshock13">
-            <meta name="owner" content="Phillip Shockley/Pshock13">
-            <link rel="shortcut icon" href="media/icon.gif">
-            <link rel="stylesheet" href="styles.css" type="text/css" />
-            <title>Home Page</title>
-            <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-            <script type="text/javascript">
-            $(document).ready(function(){
-                $("nav").on("click", "li", function(){
-                    var tabsId = $(this).attr("id");
-                    $(this).addClass("thisPage").siblings().removeClass("thisPage");
-                    $("#" + tabsId + "-content").addClass("active").siblings().removeClass("active");
+        <meta charset="utf-8">
+        <meta name="author" content="Phillip Shockley/Pshock13">
+        <meta name="owner" content="Phillip Shockley/Pshock13">
+        <link rel="shortcut icon" href="media/icon.gif">
+        <link rel="stylesheet" href="styles.css" type="text/css" />
+        <title>Home Page</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $("nav").on("click", "li", function(){
+                var tabsId = $(this).attr("id");
+                $(this).addClass("thisPage").siblings().removeClass("thisPage");
+                $("#" + tabsId + "-content").addClass("active").siblings().removeClass("active");
+            });
+        });
 
-                    var vid = document.getElementsByTagName("iframe");
-                    console.log(vid);
-                    $('vid').each(function(){
-                        $(this).stopVideo();
-                        });
-                    });
-                    
-            })
 
-            //slideshow
-            var i = 0; //start point
-            var images = []; //Empty array
-            var time = 3000; //time between images in milliseconds
+        //slideshow
+        var i = 1; //start point
+        var images = []; //Empty array
+        var time = 3000; //time between images in milliseconds
 
-            //Images List
-            images[0]='media/slides/slide0.png';
-            images[1]='media/slides/slide1.png';
-            images[2]='media/slides/slide2.png';
-            images[3]='media/slides/slide3.png';
-            images[4]='media/slides/slide4.png';
+        //Images List
+        images[1]='media/slides/slide1.png';
+        images[2]='media/slides/slide2.png';
+        images[3]='media/slides/slide3.png';
+        images[4]='media/slides/slide4.png';
+        images[5]='media/slides/slide5.png';
 
-            //change images
-            function changeImg(){ 
-                document.slide.src=images[i]; 
-                    if(i<images.length-1) { 
-                        i++; 
+        //change images
+        
+        function changeImg(){
+            document.slide.src=images[i]; 
+                if(i<images.length) { 
+                    i++; 
                 } 
-                    else { 
-                        i=0; 
-                    } 
-                    
-                setTimeout("changeImg()",time);
-            }
-                window.onload=changeImg;
-
-            </script>
+                else { 
+                    i=1; 
+                }   
+            setTimeout("changeImg()",time);
+        }
+            window.onload=changeImg;
+        </script>
     </head>
 
 
@@ -99,13 +92,13 @@
                     <div id="tab-two-content" class="hide">
                         <h1>Tutorials</h1>
                         <hr noshade color="white" width="90%">
-                        <iframe width="640" height="360" src="https://www.youtube.com/embed/4YQ4svkETS0" frameborder="0" allowfullscreen></iframe>
+                        <iframe width="640" height="360" src="https://www.youtube.com/embed/4YQ4svkETS0?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
                         <hr noshade color="white" width="90%">           
-                        <iframe width="640" height="360" src="https://www.youtube.com/embed/2a2p2FhBgfA" frameborder="0" allowfullscreen></iframe>
+                        <iframe width="640" height="360" src="https://www.youtube.com/embed/2a2p2FhBgfA?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
                         <hr noshade color="white" width="90%">
-                        <iframe width="640" height="360" src="https://www.youtube.com/embed/0ITA_pwfzDE" frameborder="0" allowfullscreen></iframe>
+                        <iframe width="640" height="360" src="https://www.youtube.com/embed/0ITA_pwfzDE?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
                         <hr noshade color="white" width="90%">
-                        <iframe width="640" height="360" src="https://www.youtube.com/embed/8NGNKBIA_eI" frameborder="0" allowfullscreen></iframe>
+                        <iframe width="640" height="360" src="https://www.youtube.com/embed/8NGNKBIA_eI?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <div id="tab-three-content" class="hide">
                         <h1>Sign Up</h1>

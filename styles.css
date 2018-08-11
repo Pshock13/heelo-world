@@ -8,6 +8,7 @@ body{
 	margin:0;
 	padding:0;
 	color: hsla(192, 100%, 50%, 1.0);
+	text-shadow:3px 3px 1px hsla(0,0%,50%,1.0);
 }
 
 nav {
