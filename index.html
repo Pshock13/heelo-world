@@ -33,20 +33,20 @@
         //change images
         
         function changeImg(){
+            //console.log(i);
             document.slide.src=images[i]; 
-                if(i<images.length) { 
+                if(i<images.length-1) { 
                     i++; 
                 } 
                 else { 
                     i=1; 
                 }   
+            
             setTimeout("changeImg()",time);
         }
             window.onload=changeImg;
         </script>
     </head>
-
-
     <body>
             
         <div class="overlay"><img src="media/UNDER_CONSTRUCTION.png" /></div>
@@ -67,27 +67,25 @@
                 </nav>
                 <div id="content">
                     <div id="tab-one-content" class="hide active">
-                        
-                        <hr noshade color="#00ccff" width="80px">
-                        <hr noshade color="#00ccff" width="160px">
-                        <hr noshade color="#00ccff" width="240px">
-                        <hr noshade color="#00ccff" width="320px">
-                        <hr noshade color="#00ccff" width="400px">
-                        <hr noshade color="#00ccff" width="480px">
-                        <hr noshade color="#00ccff" width="560px">
-                        <hr noshade color="#00ccff" width="640px">
-                        <p><h4>To learn coding is to learn a whole new language</h4>
-                        </p>
+                        <hr noshade width="80px">
+                        <hr noshade width="160px">
+                        <hr noshade width="240px">
+                        <hr noshade width="320px">
+                        <hr noshade width="400px">
+                        <hr noshade width="480px">
+                        <hr noshade width="560px">
+                        <hr noshade width="640px">
+                        <p><h4>To learn coding is to learn a whole new language</h4></p>
                             <img name="slide" width="640" height="480">
                         <br>
-                        <hr noshade color="#00ccff" width="640px">
-                        <hr noshade color="#00ccff" width="560px">
-                        <hr noshade color="#00ccff" width="480px">
-                        <hr noshade color="#00ccff" width="400px">
-                        <hr noshade color="#00ccff" width="320px">
-                        <hr noshade color="#00ccff" width="240px">
-                        <hr noshade color="#00ccff" width="160px">
-                        <hr noshade color="#00ccff" width="80px">
+                        <hr noshade width="640px">
+                        <hr noshade width="560px">
+                        <hr noshade width="480px">
+                        <hr noshade width="400px">
+                        <hr noshade width="320px">
+                        <hr noshade width="240px">
+                        <hr noshade width="160px">
+                        <hr noshade width="80px">
                     </div>
                     <div id="tab-two-content" class="hide">
                         <h1>Tutorials</h1>

@@ -119,10 +119,8 @@ header img{
 	text-align:center;
 }
 
-#tab-one-content iframe,
-#tab-two-content iframe{
-	display:block;
-	margin:0 auto;
+#tab-one-content img{
+	box-shadow:0 0 10px #00ccff;
 }
 
 #tab-one-content p{
@@ -131,6 +129,11 @@ header img{
 
 #tab-one-content hr{
 	color:#00ccff;
+}
+
+#tab-two-content iframe{
+	display:block;
+	margin:0 auto;
 }
 
 div form{

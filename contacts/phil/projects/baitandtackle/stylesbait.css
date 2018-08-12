@@ -4,7 +4,7 @@
 body {
 	background:#fefefe url(media/fish.jpg) no-repeat fixed center top;
 	font-family: Georgia, "Times New Roman", Times, serif;
-	background-size: 100%; 
+	background-size: cover; 
 	font-size: 81.25%;
 }
 
