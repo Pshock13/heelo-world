@@ -204,6 +204,11 @@ footer {
 #mike{
 	background-image:url("contacts/mike/Media/hhavok.jpg");
 }
+
+#kim{
+	background-image:url("contacts/kim/media/kim.jpg");
+}
+
 a.hidden{
 	color:#fff;
 	text-decoration:none;

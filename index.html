@@ -17,13 +17,40 @@
             });
         });
 
+        //Quote generator
+        function getQuote(){
+            let quotes =[];
+            let sources =[];
 
+            //quote list
+            quotes[0] = 'The most disastrous thing that you can ever learn is your first programming language.';
+            quotes[1] = 'Any fool can write code that a computer can understand. Good programmers write code that humans can understand.';
+            quotes[2] = 'Java is to JavaScript what Car is to Carpet.';
+            quotes[3] = 'Java is to JavaScript as ham is to hamster.';
+            quotes[4] = 'Don’t just download the latest app, help redesign it. Don’t just play on your phone, program it.';
+            quotes[5] = 'Programming isn\'t about what you know, it\'s about what you can figure out.';
+            quotes[6] = 'Live as if you were to die tomorrow. Learn as if you were to live forever.';
+
+            //source list
+            sources[0] = 'Alan Kay';
+            sources[1] = 'Martin Fowler';
+            sources[2] = 'Chris Heilmann';
+            sources[3] = 'Jeremy Keith';
+            sources[4] = 'Barrack Obama';
+            sources[5] = 'Chris Pine';
+            sources[6] = 'Mahatma Gandhi';
+
+            j=Math.floor(Math.random() * quotes.length);
+            document.write("\"" + quotes[j] + "\"");
+            document.write("<br><em>-" + sources[j] + "</em>");
+        }
         //slideshow
-        var i = 1; //start point
+        var i = 0; //start point
         var images = []; //Empty array
         var time = 3000; //time between images in milliseconds
 
         //Images List
+        images[0]='media/slides/slide0.png';
         images[1]='media/slides/slide1.png';
         images[2]='media/slides/slide2.png';
         images[3]='media/slides/slide3.png';
@@ -39,7 +66,7 @@
                     i++; 
                 } 
                 else { 
-                    i=1; 
+                    i=0; 
                 }   
             
             setTimeout("changeImg()",time);
@@ -75,8 +102,8 @@
                         <hr noshade width="480px">
                         <hr noshade width="560px">
                         <hr noshade width="640px">
-                        <p><h4>To learn coding is to learn a whole new language</h4></p>
-                            <img name="slide" width="640" height="480">
+                        <p><h4><script>getQuote();</script></h4></p>
+                        <img name="slide" width="640" height="480">
                         <br>
                         <hr noshade width="640px">
                         <hr noshade width="560px">
@@ -117,6 +144,9 @@
                             </a>
                             <a href="contacts/mike/mike.html">
                                 <div class="photo" id="mike"><h1>Mike</h1></div>
+                            </a>
+                            <a href="contacts/kim/index.html">
+                                <div class="photo" id="kim"><h1>Kim</h1></div>
                             </a>
                         </div>
                     </div>
