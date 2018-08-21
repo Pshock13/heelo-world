@@ -67,7 +67,10 @@ mons[251]= {pic:"mons/Celebi.png", name:"Celebi", type:"pokemon"};
 mons[257]= {pic:"mons/Blaziken.png", name:"Blaziken", type:"digimon"};
 mons[378]= {pic:"mons/Lucario.png", name:"Lucario", type:"pokemon"};
 mons[393]= {pic:"mons/Piplup.png", name:"Piplup", type:"pokemon"};
-mons[746]= {pic:"mons/Wishiwashi.png", name:"Wishiwashi", type:"pokemon"};
+mons[567]= {pic:"mons/Archeops.png", name:"Archeops", type:"pokemon"};
+mons[746]= {pic:"mons/Shiinotic.png", name:"Shiinotic", type:"pokemon"};
+mons[752]= {pic:"mons/Araquanid.png", name:"Araquanid", type:"pokemon"};
+mons[756]= {pic:"mons/Wishiwashi.png", name:"Wishiwashi", type:"pokemon"};
 mons[774]= {pic:"mons/Minior.png", name:"Minior", type:"pokemon"};
 mons[1000]= {pic:"mons/Augumon.png", name:"Augumon", type:"digimon"};
 mons[1001]= {pic:"mons/Biyomon.png", name:"Biyomon", type:"digimon"};
@@ -99,35 +102,68 @@ mons[1026]= {pic:"mons/Phantomon.png", name:"Phantomon", type:"digimon"};
 mons[1027]= {pic:"mons/Snimon.png", name:"Snimon", type:"digimon"};
 mons[1028]= {pic:"mons/Kuwagamon.png", name:"Kuwagamon", type:"digimon"};
 mons[1029]= {pic:"mons/Ogremon.png", name:"Ogremon", type:"digimon"};
+mons[1030]= {pic:"mons/Exveemon.png", name:"Exveemon", type:"digimon"};
+mons[1031]= {pic:"mons/Veemon.png", name:"Veemon", type:"digimon"};
 
+var score = 0;
 
+//var picsHere = document.getElementById("mon")
+
+function getScore(){
+	document.write("Score: " + score);
+};
 
 function getMon(){
     i=Math.floor(Math.random() * mons.length);
 	if(mons[i]==undefined){
-    getMon();
+    	getMon();
 	} else{
-	console.log(mons[i].name);
-	console.log(mons[i].type);
-		document.write("<img id=\"mon\" src=\"" + mons[i].pic + "\">");
-	};
+		console.log(mons[i].name);
+		console.log(mons[i].type);
+		document.write("<img class=\"mon\" src=\"" + mons[i].pic + "\">");
+	}
 };
 
+
+//Answer buttons; updates score if correct
 function isDigimon(){
 	if (mons[i].type=="digimon"){
-		alert("Correct! That's " + mons[i].name);
+		score++;
+		document.getElementById("score").innerHTML = "Score: " + score;
 	}
 	else{
-		alert("Sorry, that's the " + mons[i].type + " named " + mons[i].name);
+		score=0;
+		document.getElementById("score").innerHTML = "Score: " + score;
 	}
+	reload();
 };
 
 function isPokemon(){
 	if (mons[i].type=="pokemon"){
-		alert("Correct! That's " + mons[i].name);
+		score++;
+		document.getElementById("score").innerHTML = "Score: " + score;
 	}
 	else{
-		alert("Sorry, that's the " + mons[i].type + " named " + mons[i].name);
+		score=0;
+		document.getElementById("score").innerHTML = "Score: " + score;
+	}
+	reload();
+};
+
+function reload(){
+	i=Math.floor(Math.random() * mons.length);
+	if(mons[i]==undefined){
+		reload();
+	} else{
+		var images = document.getElementsByClassName('mon');
+		for (var p = 0; p < images.length; p++) {
+			images[p].parentNode.removeChild(images[p]);
+		}
+		var newImage = "<img class=\"mon\" src=\"" + mons[i].pic + "\">";
+
+		document.getElementById("mon").innerHTML = newImage;
 	}
 };
 
+
+ 

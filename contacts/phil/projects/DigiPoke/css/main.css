@@ -49,15 +49,34 @@ nav li:hover{
     flex-flow: column wrap;
 }
 
-.mon, .title{
+#mon, .title{
     margin:10px auto;
 }
 
-#mon{
+.mon{
     height:400px;
 		width:auto;
 }
 
-@media (max-width:960px){
+#score{
+	color: #00FF00;
+	font-size:24px;
+}
 
+
+@media (max-width:960px){
+	#mon{
+		width: auto;
+		height:200px;
+	}
+	.logo{
+		width:190px;
+		height:auto;
+	}
+	nav li{
+		height: 50px;
+	}
+	nav{
+		width:100%;
+	}
 }
