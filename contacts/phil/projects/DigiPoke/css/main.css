@@ -26,12 +26,12 @@ nav li{
     list-style: none;
     cursor:pointer;
     background:linear-gradient(to bottom, hsla(24, 82%, 50%, 1.0), hsla(48, 100%, 51%, 1.0));
-		width:24%;
-		text-align:center;
-		margin:0 1px;
-		border-left:1px solid #000;
-		border-right:1px solid #000;
-		height:25px;
+    width:24%;
+    text-align:center;
+    margin:0 1px;
+    border-left:1px solid #000;
+    border-right:1px solid #000;
+    height:25px;
 }
 
 nav li:hover{
@@ -49,15 +49,33 @@ nav li:hover{
     flex-flow: column wrap;
 }
 
-.mon, .title{
+#mon, .title{
     margin:10px auto;
+    max-height:400px;
+}
+#monimg{
+    height:400px;
 }
 
-#mon{
-    height:400px;
-		width:auto;
+#score{
+	color: #00FF00;
+	font-size:24px;
 }
+
 
 @media (max-width:960px){
-
+    #monimg{
+		width: auto;
+		height:200px;
+	}
+	.logo{
+		width:190px;
+		height:auto;
+	}
+	nav li{
+		height: 50px;
+	}
+	nav{
+		width:100%;
+	}
 }

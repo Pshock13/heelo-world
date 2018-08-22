@@ -6,21 +6,21 @@
     <link rel="stylesheet" href="css/main.css" type="text/css" />
     <script type="text/javascript" src="js/main.js"></script>
 </head>
-<body>
+<body onLoad="getMon()">
     <div id="wrapper">
         <header>
             <nav>
                 <ul>
                     <li>Home</li>
+                    <li id="score"><script>getScore();</script></li>
                     <li>Skip</li>
-                    <li>This</li>
                     <li>About</li>
                 </ul>
             </nav>
         </header>
         <div class="content">
-            <div class="mon">
-                <script>getMon();</script>
+            <div id="mon">
+                <img src="" alt="" id="monimg" />
             </div>
             <div class="title"><h1><img class="logo" src = "media/digimon_logo.png" onclick="isDigimon()"> or <img class="logo" src = "media/pokemon_logo.png" onclick="isPokemon()"></h1>
             </div>

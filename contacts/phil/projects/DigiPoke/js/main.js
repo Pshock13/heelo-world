@@ -67,7 +67,10 @@ mons[251]= {pic:"mons/Celebi.png", name:"Celebi", type:"pokemon"};
 mons[257]= {pic:"mons/Blaziken.png", name:"Blaziken", type:"digimon"};
 mons[378]= {pic:"mons/Lucario.png", name:"Lucario", type:"pokemon"};
 mons[393]= {pic:"mons/Piplup.png", name:"Piplup", type:"pokemon"};
-mons[746]= {pic:"mons/Wishiwashi.png", name:"Wishiwashi", type:"pokemon"};
+mons[567]= {pic:"mons/Archeops.png", name:"Archeops", type:"pokemon"};
+mons[746]= {pic:"mons/Shiinotic.png", name:"Shiinotic", type:"pokemon"};
+mons[752]= {pic:"mons/Araquanid.png", name:"Araquanid", type:"pokemon"};
+mons[756]= {pic:"mons/Wishiwashi.png", name:"Wishiwashi", type:"pokemon"};
 mons[774]= {pic:"mons/Minior.png", name:"Minior", type:"pokemon"};
 mons[1000]= {pic:"mons/Augumon.png", name:"Augumon", type:"digimon"};
 mons[1001]= {pic:"mons/Biyomon.png", name:"Biyomon", type:"digimon"};
@@ -99,35 +102,69 @@ mons[1026]= {pic:"mons/Phantomon.png", name:"Phantomon", type:"digimon"};
 mons[1027]= {pic:"mons/Snimon.png", name:"Snimon", type:"digimon"};
 mons[1028]= {pic:"mons/Kuwagamon.png", name:"Kuwagamon", type:"digimon"};
 mons[1029]= {pic:"mons/Ogremon.png", name:"Ogremon", type:"digimon"};
+mons[1030]= {pic:"mons/Exveemon.png", name:"Exveemon", type:"digimon"};
+mons[1031]= {pic:"mons/Veemon.png", name:"Veemon", type:"digimon"};
+mons[1032]= {pic:"mons/Garudamon.png", name:"Garudamon", type:"digimon"};
+mons[1033]= {pic:"mons/Armadillomon.png", name:"Armadillomon", type:"digimon"};
+mons[1034]= {pic:"mons/Kiwimon.png", name:"Kiwimon", type:"digimon"};
+mons[1035]= {pic:"mons/Centarumon.png", name:"Centarumon", type:"digimon"};
+mons[1036]= {pic:"mons/Tyrannomon.png", name:"Tyrannomon", type:"digimon"};
+mons[1037]= {pic:"mons/Bukamon.png", name:"Bukamon", type:"digimon"};
+mons[1038]= {pic:"mons/Ikkakumon.png", name:"Ikkakumon", type:"digimon"};
+/*Gargomon
+*Wendigomon
+*Woodmon
+*Gizamon
+*Betamon
+*Floramon
+*Hawkmon
+*Otamamon
+*Shellmon*/
+
+var score = 0, i = Math.floor(Math.random() * mons.length);
 
 
-
-function getMon(){
-    i=Math.floor(Math.random() * mons.length);
-	if(mons[i]==undefined){
-    getMon();
-	} else{
-	console.log(mons[i].name);
-	console.log(mons[i].type);
-		document.write("<img id=\"mon\" src=\"" + mons[i].pic + "\">");
-	};
+function getScore(){
+	document.write("Score: " + score);
 };
 
+function getMon(){
+	i = Math.floor(Math.random() * mons.length);
+	if(mons[i]==undefined){
+    	getMon();
+	} else{
+		console.log(mons[i].name);
+		console.log(mons[i].type);
+		var img = document.getElementById("monimg");
+		img.src=mons[i].pic;
+	}
+};
+
+
+//Answer buttons; updates score if correct
 function isDigimon(){
-	if (mons[i].type=="digimon"){
-		alert("Correct! That's " + mons[i].name);
+	if (mons[i] && mons[i].type==="digimon"){
+		score++;
+		document.getElementById("score").innerHTML = "Score: " + score;
 	}
 	else{
-		alert("Sorry, that's the " + mons[i].type + " named " + mons[i].name);
+		score=0;
+		document.getElementById("score").innerHTML = "Score: " + score;
 	}
+	getMon();
 };
 
 function isPokemon(){
-	if (mons[i].type=="pokemon"){
-		alert("Correct! That's " + mons[i].name);
+	if (mons[i] && mons[i].type=="pokemon"){
+		score++;
+		document.getElementById("score").innerHTML = "Score: " + score;
 	}
 	else{
-		alert("Sorry, that's the " + mons[i].type + " named " + mons[i].name);
+		score=0;
+		document.getElementById("score").innerHTML = "Score: " + score;
 	}
+	getMon();
 };
 
+
+ 
