@@ -128,6 +128,10 @@ function getScore(){
 	document.write("Score: " + score);
 };
 
+function getScore(){
+	document.write("Score: " + score);
+};
+
 function getMon(){
 	i = Math.floor(Math.random() * mons.length);
 	if(mons[i]==undefined){
