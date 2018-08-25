@@ -64,7 +64,7 @@ mons[61]= {pic:"mons/Poliwhirl.png", name:"Poliwhirl", type:"pokemon"};
 mons[62]= {pic:"mons/Poliwrath.png", name:"Poliwrath", type:"pokemon"};
 mons[63]= {pic:"mons/Abra.png", name:"Abra", type:"pokemon"};
 mons[251]= {pic:"mons/Celebi.png", name:"Celebi", type:"pokemon"};
-mons[257]= {pic:"mons/Blaziken.png", name:"Blaziken", type:"digimon"};
+mons[257]= {pic:"mons/Blaziken.png", name:"Blaziken", type:"pokemon"};
 mons[378]= {pic:"mons/Lucario.png", name:"Lucario", type:"pokemon"};
 mons[393]= {pic:"mons/Piplup.png", name:"Piplup", type:"pokemon"};
 mons[567]= {pic:"mons/Archeops.png", name:"Archeops", type:"pokemon"};
@@ -121,25 +121,31 @@ mons[1038]= {pic:"mons/Ikkakumon.png", name:"Ikkakumon", type:"digimon"};
 *Otamamon
 *Shellmon*/
 
-var score = 0, i = Math.floor(Math.random() * mons.length);
 
+var score = 0;
+var hScore=0;
+var usedMons=[];
 
-function getScore(){
-	document.write("Score: " + score);
-};
+/*function getScore(){
+	document.write("Score: " + score + "<br> High Score: " + hScore);
+};*/
 
-function getScore(){
-	document.write("Score: " + score);
-};
 
 function getMon(){
-	i = Math.floor(Math.random() * mons.length);
-	if(mons[i]==undefined){
-    	getMon();
-	} else{
-		console.log(mons[i].name);
-		console.log(mons[i].type);
-		var img = document.getElementById("monimg");
+	document.getElementById("score").innerHTML = "Score: " + score + "<br> High Score: " + hScore;
+	i = Math.floor(Math.random() * mons.length); //Grabs a rendom index in mons array
+	var img = document.getElementById("monimg");
+	var totalMons=0;					//Set total monsters in array, minus all the "undefined" objects
+	for(var x in mons){					//Increase total mon by 1 for each object defined in the array 'mons'
+	 totalMons++;						//
+	};
+	//console.log(`Total Monsters: ${totalMons}`);
+
+	if(totalMons===0){					//If there are no more monsters left, YOU WIN!
+		img.src="media/game_over.png";
+	} else if(mons[i]==undefined){		//Rerun getMon() until you grab a number that is defined in the mons array
+		getMon();
+	} else{								//Once you have a defined number, display the picture associated with it.
 		img.src=mons[i].pic;
 	}
 };
@@ -148,27 +154,38 @@ function getMon(){
 //Answer buttons; updates score if correct
 function isDigimon(){
 	if (mons[i] && mons[i].type==="digimon"){
-		score++;
-		document.getElementById("score").innerHTML = "Score: " + score;
+		score++;							//If correctly answered +1 to the score
+		var removed=mons.splice(i, 1)		//Remove that monster so it doesn't show again
+		usedMons=usedMons.concat(removed);	//Move removed monster to a new array so it can be added back in should the player get one wrong
+		if(score >= hScore){				//logs the highest score per session (refreshing the page resets the high score)
+			hScore=score;
+		}
 	}
-	else{
-		score=0;
-		document.getElementById("score").innerHTML = "Score: " + score;
+	else{									//Get a wrong answer...
+		score=0;							//Your score is reset to zero
+		mons=mons.concat(usedMons);			//And all the monster you got correct are added back into the pool of monsters
+		usedMons=usedMons.splice(i,i++);	//Erase the pool of monster you got correct
 	}
-	getMon();
+	getMon();								//run getMon() to load a new monster
 };
 
 function isPokemon(){
-	if (mons[i] && mons[i].type=="pokemon"){
+	if (mons[i] && mons[i].type==="pokemon"){
 		score++;
-		document.getElementById("score").innerHTML = "Score: " + score;
+		var removed=mons.splice(i, 1)
+		usedMons=usedMons.concat(removed);
+		if(score >= hScore){
+			hScore=score;
+		}
 	}
 	else{
 		score=0;
-		document.getElementById("score").innerHTML = "Score: " + score;
+		mons=mons.concat(usedMons);
+		usedMons=usedMons.splice(i,i++);
 	}
 	getMon();
 };
 
-
- 
+function noFunction(){
+	alert("This currently has no function.")
+};
