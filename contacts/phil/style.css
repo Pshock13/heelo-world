@@ -10,11 +10,12 @@ body {
     height:100%;
     background: #000 url("media/2.jpg") no-repeat center center;
     background-attachment: fixed;
-    color:rgb(255, 0, 0);
+    color:#FA8100;
     text-shadow:1px 1px #000;
     
 }
 
+/*
 #container div {
     padding: 0;
     display: flex;
@@ -92,6 +93,7 @@ div#container {
     border-radius:20px;
     box-shadow: 2px 2px 5px red;
 }
+*/
 
 /*div#overlay{
 	background: url("../../media/2.jpg") no-repeat center center;
@@ -115,10 +117,11 @@ div#container {
 }
 
 .mugshot {
+display: block;
     height:200px;
     width:200px;
-    margin:auto;
-    box-shadow: 2px 2px 5px red;
+    margin:0 auto;
+    border:1px solid #FA8100;
     border-radius:100%;
 }
 
@@ -138,6 +141,7 @@ input#return{
     cursor: pointer;
 }
 
+/*
 #projects input{
     margin:3px;
     height:50px;
@@ -153,7 +157,7 @@ input#proj_buttons:hover {
     z-index:100;
 }
 
- input#disabled{
+input#disabled{
 	cursor: not-allowed;
 	opacity:0.3;
     background-color:none;
@@ -166,4 +170,55 @@ input#disabled:hover{
 
 input#disabled:active{
     pointer-events:none;
+}
+*/
+
+/* Style the sidebar - fixed full height */
+.sidebar {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 16px;
+	border-right: 1px solid #FA8100;
+}
+
+/* Style sidebar links */
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+/* Style links on mouse-over */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Style the main content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
+/* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+.active{
+	background-color:#FA8100;
+	color:#fff;
+}
+
+.content{
+	margin-left:160px;
+	padding:10px;
 }
