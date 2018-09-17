@@ -5,57 +5,60 @@
         <meta name="owner" content="Phillip Shockley/Pshock13">
         <link rel="shortcut icon" href="media/icon.gif">
         <link rel="stylesheet" href="style.css" type="text/css" />
+				<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
     </head>
 <!--
-sbengebretsen@gmail.com
 elias sarantoplous
-html5 image gallery
 3rdelementtutorial.com
 -->
 
-<!--Colors I wish to use
+<!--
+Colors I wish to use
 #01F4AB
 #FA8100
 -->
     <body>
-<div id="frame">
-
-        <div class="overlay"><img src="../../media/UNDER_CONSTRUCTION.png" /></div>
-<input type="button" id="return" value="&lt; Home" onclick="window.location='../../index.html';" />
-    <!--Contact Card-->
-    <div id="container">
-        <div id="photo">About Me<img class="mugshot" src="media/mugshot.jpg" />
-            Phillip Shockley
-        </div>
-        <div id="about_me">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus orci diam, fermentum a auctor vel, ultricies id quam. Integer id feugiat mi, sit amet faucibus justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean vulputate nibh est, molestie laoreet nibh vestibulum nec. Nam lorem ipsum, ultrices eu sapien id, placerat pharetra odio. Pellentesque hendrerit ante ac augue varius, vitae scelerisque elit vulputate. In consequat augue ut pharetra ultricies. Nulla ac ultrices ligula. Fusce tincidunt orci et mauris pharetra, sed pharetra est posuere. Duis viverra viverra nulla, et tincidunt mi malesuada eu. Nam blandit lacus quis aliquet suscipit. Vestibulum molestie sem mi, vitae tincidunt leo consequat eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut finibus dolor.</p>
-        </div>
-        <div id="botleft">
-            
-        </div>
-        <div id="projects">
-            <input type="button" id="proj_buttons" value="Resum&#233;" onclick="window.location='projects/resume/index.html';" />
-            <input type="button" id="proj_buttons" value="Bait & Tackle" onclick="window.location='projects/baitandtackle/indexbaitandtackle.html';" />
-            <input type="button" id="proj_buttons" value="Fancy Box" onclick="window.location='projects/fancybox/picturegallery.html';" />
-            <input type="button" id="proj_buttons" value="Bayside Beat" onclick="window.location='projects/baysidebeat/index.html';" />
-            <input type="button" id="proj_buttons" value="jQuery Tabs" onclick="window.location='projects/jquerytabs/index.html';" />
-            <input type="button" id="disabled" value="Project Unknown" onclick="window.location='.html';" />
-            <input type="button" id="proj_buttons" value="Resum&#233; 2.0" onclick="window.location='projects/resume2/index.html';" />
-            <input type="button" id="proj_buttons" value="Digimon or Pokemon" onclick="window.location='projects/DigiPoke/index.html';" />
-            <input type="button" id="disabled" value="Project Unknown" onclick="window.location='.html';" />
-            <input type="button" id="disabled" value="Project Unknown" onclick="window.location='.html';" />
-            <input type="button" id="disabled" value="Project Unknown" onclick="window.location='.html';" />
-            <input type="button" id="disabled" value="Project Unknown" onclick="window.location='.html';" />
-            <input type="button" id="disabled" value="Project Unknown" onclick="window.location='.html';" />
-            <input type="button" id="disabled" value="Project Unknown" onclick="window.location='.html';" />
-            <input type="button" id="disabled" value="Project Unknown" onclick="window.location='.html';" />
-            <input type="button" id="disabled" value="Project Unknown" onclick="window.location='.html';" />
-            <input type="button" id="disabled" value="Project Unknown" onclick="window.location='.html';" />
-            <input type="button" id="disabled" value="Project Unknown" onclick="window.location='.html';" />
-        </div>
-    </div>
-    <div id=overlay>
-    </div>
+<div class="wrap">
+	<div class="sidebar">
+	  <a href="#" class="tablinks" onclick="openTab(event, 'home')"><i class="fa fa-fw fa-home"></i> Home</a>
+	  <a href="#" class="tablinks" onclick="openTab(event, 'projects')"><i class="fa fa-fw fa-code"></i> Projects</a>
+	  <a href="#" class="tablinks" onclick="openTab(event, 'gallery')"><i class="fa fa-fw fa-images"></i> Gallery</a>
+	  <a href="#" class="tablinks" onclick="openTab(event, 'film')"><i class="fa fa-fw fa-video"></i> Film</a>
+	  <a href="#" class="tablinks" onclick="openTab(event, 'contact')" class="active" id="defaultOpen"><i class="fa fa-fw fa-id-badge"></i> Contact</a>
+	</div>
+	<div class="content">
+		<div id="home" class="tabcontent">
+			<div>
+				Home tab
+			</div>
+		</div>
+		<div id="projects" class="tabcontent">
+			<div id="projectGallery">
+				
+			</div>
+		</div>
+		<div id="gallery" class="tabcontent">
+			<div>
+				<img src="media/gallery/1.jpg">
+				<img src="media/gallery/2.jpg">
+				<img src="media/gallery/3.jpg">
+				<img src="media/gallery/4.jpg">
+				<img src="media/gallery/5.jpg">
+				<img src="media/gallery/6.jpg">
+				<img src="media/gallery/7.jpg">
+				<img src="media/gallery/8.jpg">
+				<img src="media/gallery/9.jpg">
+				<img src="media/gallery/10.jpg">
+			</div>
+		</div>
+		<div id="contact" class="tabcontent">
+			<img src="media/mugshot.jpg" class="mugshot">
+		</div>
+		<div id="film" class="tabcontent">
+			<div>film content</div>
+		</div>
+	</div>
 </div>
     </body>
+		<script type="text/javascript" src="js/main.js"></script>
 </html>

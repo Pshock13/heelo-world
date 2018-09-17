@@ -10,160 +10,94 @@ body {
     height:100%;
     background: #000 url("media/2.jpg") no-repeat center center;
     background-attachment: fixed;
-    color:rgb(255, 0, 0);
+    color:#FA8100;
     text-shadow:1px 1px #000;
-    
-}
-
-#container div {
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}	
-
-div#photo,
-div#about_me,
-div#botleft,
-div#projects{
-    border: 2px outset #f00;
-}
-
-div#photo{
-    border-left: none;
-    border-top: none;
-    border-bottom-right-radius: 20px;
-}
-
-div#about_me{
-    border-right: none;
-    border-top: none;
-    border-bottom-left-radius: 20px;
-    padding: 20px;
-}
-
-div#about_me p{
-    text-shadow:none;
-
-}
-
-div#botleft{
-    border-left: none;
-    border-bottom: none;
-    border-top-right-radius: 20px;
-}
-
-div#projects {
-    display: flex;
-    flex-flow: column wrap;
-    align-items:stretch;
-    
-    border-bottom: none;
-    border-right: none;
-    border-top-left-radius: 20px;
-    padding: 5px;
-    height:360px;
-}
-
-/*div.projects span{
-    font-weight: 800;
-    font-size: 24px;
-    margin:20px;
-}*/
-
-div#frame{ /*Keeps the contact card dead center of the page*/
-    width:100%;
-    height:100%;
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
-    align-items: center;
-}
-
-div#container {
-    display:grid;
-    grid-template-columns:1fr 2fr ;
-    grid-template-rows:1fr 1fr;
-    background-color: hsla(0,100%,100%,.25);
-    width:1200px;
-    min-height:600px;
-    height:600px;
-    border-radius:20px;
-    box-shadow: 2px 2px 5px red;
-}
-
-/*div#overlay{
-	background: url("../../media/2.jpg") no-repeat center center;
-	position:absolute;
-	width:1200px;
-	height:600px;
-	z-index:10;
-	margin:auto;
-	pointer-events:none;
-	opacity:.75;
-	border-radius:20px;
-}*/
-
-.overlay {
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 1000;
-    pointer-events: none;
-	opacity: .8;
 }
 
 .mugshot {
+    display: block;
     height:200px;
     width:200px;
-    margin:auto;
-    box-shadow: 2px 2px 5px red;
+    margin:0 auto;
+    border:1px solid #FA8100;
     border-radius:100%;
 }
 
-a, a:hover, a:visited{
-    text-decoration: none;
-    color:red;
-}
-
-input#return{
+/* Style the sidebar - fixed full height */
+.sidebar {
+    height: 100%;
+    width: 160px;
     position: fixed;
-    top:0;
-    left:0;
-    padding:5px;
-    margin-top:20px;
-    margin-left:20px;
-    border-radius:10px;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    background-color: hsl(0, 0%, 7%, .7);
+    overflow-x: hidden;
+    padding-top: 16px;
+    border-right: 1px solid #FA8100;
+}
+
+/* Style sidebar links */
+.sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+}
+
+/* Style links on mouse-over */
+.sidebar a:hover {
+    color: #f1f1f1;
+    background-color: rgba(99, 99, 99, 0.5);
+}
+
+/* Style the main content */
+.main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    padding: 0px 10px;
+}
+
+/* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
+
+.active{
+	background-color:#FA8100;
+	color:#fff !important;
+}
+
+.content{
+	margin-left:160px;
+    padding:0px;
+    height:100vh;
+}
+
+.tabcontent div{
+    padding:10px;
+}
+
+#gallery div,
+#projects div{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:space-around;
+    height:100%;
+}
+
+#gallery img,
+#projects img{
+    width:200px;
+    height:200px;
+    object-fit:cover;
+    opacity:.3;
+}
+
+#gallery img:hover,
+#projects img:hover{
+    opacity:1;
+    border:1px solid #fff;
     cursor: pointer;
-}
-
-#projects input{
-    margin:3px;
-    height:50px;
-    border-radius: 20px;
-    transition-duration: .4s;
-}
-input#proj_buttons:hover {
-    box-shadow: 0px 0px 25px 5px #f00;
-    border-radius: 20px;
-    cursor: pointer;
-    color: #f00;
-    position: inherit;
-    z-index:100;
-}
-
- input#disabled{
-	cursor: not-allowed;
-	opacity:0.3;
-    background-color:none;
-}
-
-input#disabled:hover{
-    text-shadow:1px 1px 100px #000;
-    color:hsla(0,0,0,.0)
-}
-
-input#disabled:active{
-    pointer-events:none;
 }
