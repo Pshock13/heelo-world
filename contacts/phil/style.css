@@ -14,6 +14,7 @@ body {
     text-shadow:1px 1px #000;
 }
 
+
 .mugshot {
     display: block;
     height:200px;
@@ -78,6 +79,7 @@ body {
 .tabcontent div{
     padding:10px;
 }
+*/
 
 #gallery div,
 #projects div{
