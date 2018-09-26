@@ -1,25 +1,31 @@
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
     margin:0;
     padding:0;
+}
+
+a, a:hover, a:active,a:visited{
+    color:#FA8100;
+    text-decoration:none;
 }
 
 body {
     margin: 0;
     padding: 0;
     height:100%;
+    width:100%;
     background: #000 url("media/2.jpg") no-repeat center center;
     background-attachment: fixed;
+    background-size: cover;
     color:#FA8100;
     text-shadow:1px 1px #000;
 }
-
 
 .mugshot {
     display: block;
     height:200px;
     width:200px;
-    margin:0 auto;
+    margin:50px auto 0 auto;
     border:1px solid #FA8100;
     border-radius:100%;
 }
@@ -34,13 +40,14 @@ body {
     left: 0;
     background-color: hsl(0, 0%, 7%, .7);
     overflow-x: hidden;
-    padding-top: 16px;
-    border-right: 1px solid #FA8100;
+    /*padding-top: 16px;*/
+    border-right: 1px outset #FA8100;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23c0c0c0' fill-opacity='.1' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 /* Style sidebar links */
 .sidebar a {
-    padding: 6px 8px 6px 16px;
+    padding: 20px 8px 20px 16px;
     text-decoration: none;
     font-size: 20px;
     color: #818181;
@@ -48,9 +55,10 @@ body {
 }
 
 /* Style links on mouse-over */
-.sidebar a:hover {
+.navButton:hover{
     color: #f1f1f1;
-    background-color: rgba(99, 99, 99, 0.5);
+    background-color: rgba(100, 100, 100, 0.5);
+    cursor: pointer;
 }
 
 /* Style the main content */
@@ -59,19 +67,16 @@ body {
     padding: 0px 10px;
 }
 
-/* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
-@media screen and (max-height: 450px) {
-    .sidebar {padding-top: 15px;}
-    .sidebar a {font-size: 18px;}
+.active{
+    background-color:#FA8100;
 }
 
-.active{
-	background-color:#FA8100;
-	color:#fff !important;
+.active a{
+    color:#fff !important;
 }
 
 .content{
-	margin-left:160px;
+    margin-left:160px;
     padding:0px;
     height:100vh;
 }
@@ -79,27 +84,84 @@ body {
 .tabcontent div{
     padding:10px;
 }
-*/
 
-#gallery div,
-#projects div{
+#gallery > div,
+#projects > div {
     display:flex;
     flex-flow:row wrap;
     justify-content:space-around;
-    height:100%;
 }
 
-#gallery img,
-#projects img{
+img.thumb{
     width:200px;
     height:200px;
     object-fit:cover;
     opacity:.3;
+    filter:grayscale(100%);
+    transition:.3s;
+		border-radius:10px;
 }
 
-#gallery img:hover,
-#projects img:hover{
+img.thumb:hover{
     opacity:1;
     border:1px solid #fff;
     cursor: pointer;
+    filter:none;
+    transition:.3s;
+}
+
+#contact ul{
+    list-style-type:none;
+}
+
+#contact ul li{
+    padding: 10px 0;
+}
+
+#contact i{
+    font-size:30px;
+}
+
+.projectContain{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.modal{
+    display: none !important; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 50; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+@media screen and (max-width: 414px) {
+    .sidebar{
+        width:80px;
+    }
+    .tablinks span{
+        display:none;
+    }
+    .navButton{
+        height:20%;
+        font-size-adjust:1;
+    }
+    .content{
+        margin-left:80px;
+    }
+    .centered{
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 }

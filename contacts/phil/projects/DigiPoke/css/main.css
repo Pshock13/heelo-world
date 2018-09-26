@@ -32,6 +32,7 @@ nav li{
     border-left:1px solid #000;
     border-right:1px solid #000;
     height:25px;
+		-moz-user-select: none;
 }
 
 nav li:hover{

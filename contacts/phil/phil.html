@@ -1,10 +1,10 @@
 <html>
-    <head>
-        <title>Phil's Contact Page</title>
-        <meta name="author" content="Phillip Shockley/Pshock13">
-        <meta name="owner" content="Phillip Shockley/Pshock13">
-        <link rel="shortcut icon" href="media/icon.gif">
-        <link rel="stylesheet" href="style.css" type="text/css" />
+	<head>
+		<title>Phil's Contact Page</title>
+		<meta name="author" content="Phillip Shockley/Pshock13">
+		<meta name="owner" content="Phillip Shockley/Pshock13">
+		<link rel="shortcut icon" href="media/icon.gif">
+		<link rel="stylesheet" href="style.css" type="text/css" />
 				<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
     </head>
 <!--
@@ -17,48 +17,115 @@ Colors I wish to use
 #01F4AB
 #FA8100
 -->
-    <body>
-<div class="wrap">
-	<div class="sidebar">
-	  <a href="#" class="tablinks" onclick="openTab(event, 'home')"><i class="fa fa-fw fa-home"></i> Home</a>
-	  <a href="#" class="tablinks" onclick="openTab(event, 'projects')"><i class="fa fa-fw fa-code"></i> Projects</a>
-	  <a href="#" class="tablinks" onclick="openTab(event, 'gallery')"><i class="fa fa-fw fa-images"></i> Gallery</a>
-	  <a href="#" class="tablinks" onclick="openTab(event, 'film')"><i class="fa fa-fw fa-video"></i> Film</a>
-	  <a href="#" class="tablinks" onclick="openTab(event, 'contact')" class="active" id="defaultOpen"><i class="fa fa-fw fa-id-badge"></i> Contact</a>
-	</div>
-	<div class="content">
-		<div id="home" class="tabcontent">
-			<div>
-				Home tab
+	<body>
+		<div class="wrap">
+			<div class="sidebar">
+				<div class="navButton">
+					<a href="../../index.html" class="tablinks centered">
+						<i class="fa fa-fw fa-home"></i>
+						<span>Home</span>
+					</a>
+				</div>
+				<div class="navButton" onclick="openTab(event, 'projects')">
+					<a href="#" class="tablinks centered">
+						<i class="fa fa-fw fa-code"></i>
+						<span>Projects</span>
+					</a>
+				</div>
+				<div class="navButton" onclick="openTab(event, 'gallery')">
+					<a href="#" class="tablinks centered" >
+						<i class="fa fa-fw fa-images"></i>
+						<span>Gallery</span>
+					</a>
+				</div>
+				<div class="navButton" onclick="openTab(event, 'film')">
+					<a href="#" class="tablinks centered">
+						<i class="fa fa-fw fa-video"></i>
+						<span>Film</span>
+					</a>
+				</div>
+				<div class="navButton active" id="defaultOpen" onclick="openTab(event, 'contact')">
+					<a href="#" class="tablinks centered">
+						<i class="fa fa-fw fa-id-badge"></i>
+						<span>Contact</span>
+					</a>
+				</div>
 			</div>
-		</div>
-		<div id="projects" class="tabcontent">
-			<div id="projectGallery">
+			<div class="content">
+				<div id="home" class="tabcontent">
+					<div>
+						Home tab
+					</div>
+				</div>
+				<div id="projects" class="tabcontent">
+					<div id="projectGallery">
+						<div class="projectContain">
+							<a href="projects/resume2/index.html">
+								<img src="media/projectGallery/resume.png" class="thumb" />
+								<div class="centered">Resume</div>
+							</a>
+						</div>
+						
+						<div class="projectContain">
+							<a href="projects/DigiPoke/index.html">
+								<img src="media/projectGallery/digipoke.png" class="thumb" />
+								<div class="centered">Digimon or Pokemon?</div>
+							</a>
+						</div>
+						
+						<div class="projectContain">
+							<a href="projects/baitandtackle/index.html">
+								<img src="projects/baitandtackle/media/fish.jpg" class="thumb" />
+								<div class="centered">Bait and Tackle</div>
+							</a>
+						</div>
+						
+						<div class="projectContain">
+							<a href="projects/baysidebeat/index.html">
+								<img src="projects/baysidebeat/media/bridge.jpg" class="thumb" />
+								<div class="centered">Bayside Beat</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div id="gallery" class="tabcontent">
+				<!--The modal-->
+				<div id="modal1" class="modal">
+					<!-- Modal Content (The Image) -->
+					<img class="modal-content" id="img01" src="media/gallery/1.jpg">
+					<!-- Modal Caption (Image Text) -->
+					<div id="caption">Smokey Nebula</div>
+				</div>
+					<div>
+						<img src="media/gallery/1.jpg" alt="Smokey Nebula" class="thumb">
+						<img src="media/gallery/2.jpg" alt="storia riparato" class="thumb">
+						<img src="media/gallery/3.jpg" alt="Mia" class="thumb">
+						<img src="media/gallery/4.jpg" alt="Faith" class="thumb">
+						<img src="media/gallery/5.jpg" alt="Justine" class="thumb">
+						<img src="media/gallery/6.jpg" alt="Screaming Fire" class="thumb">
+						<img src="media/gallery/7.jpg" alt="Let Me Out I'm Petrified" class="thumb">
+						<img src="media/gallery/8.jpg" alt="Crystals" class="thumb">
+						<img src="media/gallery/9.jpg" alt="Explosion" class="thumb">
+						<img src="media/gallery/10.jpg" alt="Cytoplasm" class="thumb">
+					</div>
+				</div>
 				
+				<div id="contact" class="tabcontent">
+					<img src="media/19623.jpg" class="mugshot">
+						<ul>
+							<li><a href="https://www.facebook.com/pshock13"><i class="fab fa-facebook"></i> Phillip Shockley</a></li>
+							<li><a href="https://www.instagram.com/philfliesadrone/"><i class="fab fa-instagram"></i> PhilFliesaDrone</a></li>
+							<li><i class="fab fa-twitch"></i> Pshock13</li>
+							<li><i class="fab fa-github"></i> Pshock13</li>
+							<li><i class="fab fa-steam"></i> Pshock13</li>
+							<li><i class="fab fa-discord"></i> Pshock13</li>
+						</ul>
+				</div>
+				<div id="film" class="tabcontent">
+					<div>film content</div>
+				</div>
 			</div>
 		</div>
-		<div id="gallery" class="tabcontent">
-			<div>
-				<img src="media/gallery/1.jpg">
-				<img src="media/gallery/2.jpg">
-				<img src="media/gallery/3.jpg">
-				<img src="media/gallery/4.jpg">
-				<img src="media/gallery/5.jpg">
-				<img src="media/gallery/6.jpg">
-				<img src="media/gallery/7.jpg">
-				<img src="media/gallery/8.jpg">
-				<img src="media/gallery/9.jpg">
-				<img src="media/gallery/10.jpg">
-			</div>
-		</div>
-		<div id="contact" class="tabcontent">
-			<img src="media/mugshot.jpg" class="mugshot">
-		</div>
-		<div id="film" class="tabcontent">
-			<div>film content</div>
-		</div>
-	</div>
-</div>
-    </body>
+	</body>
 		<script type="text/javascript" src="js/main.js"></script>
 </html>
