@@ -169,8 +169,13 @@
                 </div>
             </div>
             <footer>
-                Copyright &copy; 2016-18 Pshock<sup><a href="https://www.twitch.tv/pshock13" class="hidden">13</a></sup> &#x95; All rights reserved
+                <span id="copyright"></span> Pshock<sup><a href="https://www.twitch.tv/pshock13" class="hidden">13</a></sup> &#x95; All rights reserved
             </footer>
-        </div> 
+        </div>
+    <script>
+        var d = new Date();
+        var year = d.getFullYear();
+        document.getElementById("copyright").innerHTML = `Copyright &copy; 2016-${year}`;
+    </script>
     </body>
 </html>
