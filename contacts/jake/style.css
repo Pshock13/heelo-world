@@ -1,0 +1,45 @@
+div{
+    background-color: rebeccapurple;
+}
+div.td{
+    background-color: red;
+    width: 85px;
+    font-weight: 400;
+} 
+h1.title{
+        text-align: center;
+    }
+    th{
+        font-family: cursive;
+    }
+    thead{
+        text-decoration: underline;
+    }
+    td.name{
+        text-decoration: underline;
+    }
+h4.table{
+    text-align: center;
+    font-weight: 900;
+    font-size: large;
+}
+table{border-style: ridge;
+    border-color: #000;
+    background-color: #079894ff;
+}
+td.name{
+    font-weight: 500;
+}
+p.story1{
+    border-bottom: double;
+}
+p.story2{
+    font-size: large;
+    text-align: center;
+    font-style: italic;
+    font-weight: 600;
+}
+div.story{
+    background-color: #fff;
+    border-style: dotted;
+}

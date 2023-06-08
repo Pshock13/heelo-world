@@ -209,6 +209,10 @@ footer {
 	background-image:url("contacts/josh/media/josh.jpg");
 }
 
+#Jake{
+	background-image:url("contacts/jake/media/jake.png");
+}
+
 a.hidden{
 	color:#fff;
 	text-decoration:none;
